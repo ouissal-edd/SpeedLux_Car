@@ -11,7 +11,7 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="acceuil.html">acceuil</a></li>
+                <li><a href="home.php">acceuil</a></li>
                 <li><a href="#">Produit</a></li>
                 <li><a href="services.php">Nos Services</a></li>
                 <li><a href="#">A propos</a></li>
