@@ -32,7 +32,7 @@
         <h2>Nos Services</h2>
     <!-- <div class="Allserv"> -->
         <div  class="iconService">
-            <div data-aos="fade-up" class="iconn"> <img src="../assets/service24.png" alt=""><h3 data-aos="fade-up">Service</h3><p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sit. Maiores est odit ullam nesciunt enim asperiores sunt dolore magnam debitis, id laboriosam error aliquam excepturi accusantium velit. Sunt, et!</p>
+            <div  id="nondiv" data-aos="fade-up" class="iconn noneInresonsive"> <img src="../assets/service24.png" alt=""><h3 data-aos="fade-up">Service</h3><p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sit. Maiores est odit ullam nesciunt enim asperiores sunt dolore magnam debitis, id laboriosam error aliquam excepturi accusantium velit. Sunt, et!</p>
            </div>
             <div data-aos="fade-up" class="iconn" > <img src="../assets/settings.png" alt=""> <h3 data-aos="fade-up">Service</h3><p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a deserunt ratione, praesentium, mollitia amet reprehenderit eius corrupti architecto eveniet, repellendus dignissimos veritatis iste culpa voluptatem. Fugit nobis cum non.</p>
  </div>
@@ -54,7 +54,7 @@
 
   <div data-aos="fade-up" class="QualityService">
       <h2>Plus de service ?</h2>
-      
+
       <div class="regroupRow">
       <div class="Descrip">
 
