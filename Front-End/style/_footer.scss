@@ -1,0 +1,177 @@
+.footerOno{
+    background: #DA1C36;
+    display: flex;
+
+    .phone{
+        margin-left: 5%;
+
+        img{
+            margin-top: -84px;
+            transform: skew(0deg,0deg);
+        }
+    }
+
+    .appStore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+      
+      h4{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 11%;
+    padding-bottom: 3%;
+}
+p {
+    font-size: 16px;
+    color: white;
+    padding-bottom: 8%;
+    text-align: center;
+    width: 57%;
+}
+.rowAPP{
+    gap: 6%;
+    display: flex;
+    flex-direction: row;
+}
+    
+
+      }
+}
+
+.transformation{
+    height: 88px;
+    margin-bottom: -55px;
+    -webkit-transform: skew(0deg,2.5deg);
+    transform: skew(0deg,-2.5deg);
+    background: #000E44;
+    margin-top: -34px;
+
+}
+
+
+.footerDos{
+    padding: 10%;
+    background: #000E44;
+    .secondefooter{
+        display: flex;
+        flex-direction: row;
+        gap: 27%;
+        
+        .logofooter {
+            width: 30%;
+
+            img{
+            width: 100%;
+        }
+    }
+    .Contact{
+        display: flex;
+        flex-direction: column;
+        h5 {
+            font-size: 25px;
+            color: white;
+        padding-bottom: 20%;
+        }  
+        p {
+            color: white;
+            font-size: 16px;
+        }
+    }
+
+    
+.SocialR{
+    display: flex;
+    flex-direction: column;
+    h5{
+        font-size: 25px;
+        color: white;
+    padding-bottom: 20%;
+    }
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+ 
+            a{
+  display: inline-block;
+  margin-right: 20px;
+}&hover{
+  transform: scale(0.5) translateY(-15px);
+}
+        }
+    }
+}
+    }
+}
+
+@media (max-width: 900px){
+    .footerOno{ 
+        .phone{
+        display: none;
+    }
+
+    .appStore{ 
+        h4{
+        font-size: 17px;
+        padding-top: 3%;
+    padding-bottom: 3%;
+        
+    }
+    p {
+        font-size: 8px;
+        padding-bottom: 14%;
+    }
+    .app{
+        display: none;    
+        }
+}
+    }
+
+    .transformation {
+        height: 88px;
+        margin-bottom: -17px;
+    }
+
+    .footerDos {
+        padding: 7%;
+        .logofooter{
+            display: none;
+        }
+        .secondefooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logofooter{
+                display: none;
+            }
+
+            .Contact{
+                display: none;
+            }
+
+            .SocialR {
+                h5{
+                font-size: 16px;
+                color: white;
+            padding-bottom: 10%;
+            }
+
+            .social { 
+                li{
+                    a{
+
+                    img {
+    
+                width: 30px;
+            }
+        }
+        }
+            }
+
+        }
+        }
+    }
+}

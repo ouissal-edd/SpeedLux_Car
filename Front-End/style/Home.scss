@@ -1,0 +1,58 @@
+@import "./header";
+@import "./footer";
+
+$MyReed:#DA1C36;
+@mixin MyBtn {
+    padding: 1%;
+    margin-top: 8%;
+    background: none;
+    border-radius: 30px;
+    border: solid 2px $MyReed;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.hero{
+    position: relative;
+    min-height: 113vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+background:linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.527)), url(../assets/home.jpg);
+background-size: cover ;
+color: white;
+
+h1{
+    font-size: 40px;
+    
+} 
+p {
+    font-size: 25px;
+}
+button {
+    @include MyBtn();
+
+&:hover{
+    background: $MyReed;
+
+}
+}
+}
+
+@media (max-width: 900px){
+    .hero{
+        h1 {
+            font-size: 20px;
+        }
+        h5{
+            font-size: 9px;
+        }
+        button {
+            font-size: 13px;
+        }
+    }
+}

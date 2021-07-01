@@ -1,0 +1,220 @@
+@import "./header";
+@import "./footer";
+
+$MyReed:#DA1C36;
+$MyBlue:#000E44;
+@mixin MyBtn {
+    padding: 1%;
+    margin-top: 8%;
+    background: none;
+    border-radius: 30px;
+    border: solid 2px $MyReed;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.hero{
+    position: relative;
+    min-height: 113vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.527)), url(../assets/services.jpg);
+    background-size: cover ;
+    color: white;
+
+    h1{
+        font-size: 40px;
+    }
+    h5{
+        font-size: 25px;
+    }
+    button{
+        @include MyBtn();
+        &:hover{
+            background-color:$MyReed;
+        }
+    }
+    .bas{
+       width:5%;
+       margin-top: 4%;
+       margin-bottom: 2%;
+       img{
+           width: 100%;
+           cursor: pointer;
+       }
+    }
+    
+}
+
+.ParentsServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+h2{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 30px;
+    color: $MyBlue;
+    text-align: center;
+    
+}
+
+    .iconService{
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        margin-bottom: 2%;
+        justify-content: center;
+        
+       
+
+        .iconn{
+            width: 25%;
+           display: flex;
+           flex-direction: column;
+            img{
+                width: 45%;
+                margin: auto;
+                margin-bottom: 10%;
+            }
+            h3{
+                text-align: center;
+                font-size: 25px;
+                color: $MyBlue;
+                margin-bottom: 5%;
+            }
+            p{
+                font-size: 17px;
+                text-align: center;
+            }
+        }
+    }
+
+    .DescripServices{
+        display: flex;
+        flex-direction: row;
+        p{
+            font-size: 25px;
+            color: black;
+        }
+    }
+}
+
+.SlidService{
+    background-size: cover ;
+width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.527)), url(../assets/ll.jpg);
+display: flex;
+flex-direction: column;
+gap: 8%;
+.servWork{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    h3{
+    font-size: 30px;
+    color: white;
+
+    }
+}
+.workroute{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    gap: 8%;
+
+    .iimmg{
+        width: 11%;
+    img{
+width: 100%;
+    }
+}
+    h3{
+        font-size: 40px;
+        color: white;
+    }
+}
+    
+   
+}
+
+.QualityService{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    h2{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .regroupRow{
+        display: flex;
+        flex-direction: row;
+    .Descrip{
+        display: flex;
+        flex-direction: column;
+
+        .OnoDescp{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            gap: 18%;
+            margin-bottom: 16%;
+            justify-content: center;
+            align-items: center;
+            .widthPhoto{
+                width: 90%;
+                
+            
+            img{
+                width:90%
+            }
+        }
+            p{
+                font-size: 17px;
+                color: $MyBlue;
+            }
+        }
+    }
+    }
+
+    .PhotoService{
+        width: 90%;
+        img{
+            width:100% ;
+        }
+    }
+
+
+}
+
+
+
+// @media (max-width: 900px){
+//     .hero{
+//         h1 {
+//             font-size: 20px;
+//         }
+//         h5{
+//             font-size: 9px;
+//         }
+//         button {
+//             font-size: 13px;
+//         }
+//     }
+// }
