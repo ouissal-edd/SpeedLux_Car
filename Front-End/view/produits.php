@@ -26,6 +26,10 @@
         </div>
     </div>
 
+    <div>
+        <h3>Nos Modeles</h3>
+    </div>
+
     <!-- content -->
 
     <!-- footer  -->
