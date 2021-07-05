@@ -1,0 +1,228 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  /* justify-content: space-between; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* background-color: rgb(0, 0, 0); */
+  color: white;
+  width: 100%;
+  /* #connecter {
+    padding-bottom: 4%;
+    padding-top: 4%;
+    margin-top: 15%;
+} */
+}
+
+.navbar .logo {
+  width: 200px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navbar .logo img {
+  width: 100%;
+}
+
+.navbar .navbar-links {
+  height: 100%;
+  right: 1px;
+}
+
+.navbar .navbar-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  float: right;
+  top: 10px;
+  padding: 0;
+  position: absolute;
+  right: 25px;
+}
+
+.navbar .navbar-links ul li {
+  list-style: none;
+}
+
+.navbar .navbar-links ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.navbar .navbar-links ul li a:hover {
+  border-bottom: solid 2px #DA1C36;
+}
+
+.navbar .toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.navbar .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-links {
+    display: none;
+    width: 100%;
+    padding-bottom: 6%;
+  }
+  .navbar .navbar-links ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .navbar .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+  .navbar .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 113vh;
+  padding: 50px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(45deg, #000E44, #DA1C36);
+  background-size: cover;
+  color: white;
+}
+
+.hero .container {
+  margin-top: 13%;
+  margin: auto;
+  width: 70%;
+  background: white;
+  color: #000E44;
+  padding: 8%;
+}
+
+.hero .container h1 {
+  color: #000E44;
+  font-size: 35px;
+}
+
+.hero .container hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.hero .container input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 15px;
+  outline: none;
+}
+
+.hero .container .connect {
+  width: 50%;
+  background-color: #DA1C36;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.hero .container .connect:hover {
+  opacity: 0.8;
+}
+
+.hero .container .divenregistrer {
+  float: right;
+  margin-top: 2%;
+}
+
+.hero .container .divenregistrer .enregistrer {
+  margin-top: 2%;
+  background-color: #000E44;
+  color: white;
+  padding: 14px 90px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Connect.css.map */

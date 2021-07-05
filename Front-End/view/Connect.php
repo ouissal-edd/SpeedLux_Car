@@ -1,68 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/Connect.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
+<!-- include Header -->
+<?php @include_once('Header.php'); ?>
+<!-- include Header -->
 
-<h2>Modal Example</h2>
+    <!-- content -->
+    <div class="hero">
+  <div class="container">
+  <h1>Se Connecter</h1>
+    <hr>
 
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+    <label >Email</label>
+    <input type="email" placeholder="Entrer votre Email" name="email" required>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+    <label >Password</label>
+    <input type="password" placeholder="Entrer votre Mot de Passe" name="password" required>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    
+      <button type="submit" class="connect">Se connecter</button>
+      <div class="divenregistrer" >
+      <button class="enregistrer" >S'enregistrer</button>
+</div>
+    
+  </div>
   </div>
 
-</div>
+  <div class="heroTwo">
+  <div class="container">
+  <h1>S'enregistrer</h1>
+    <hr>
+    <label >Nom Complet</label>
+    <input type="text" placeholder="Entrer votre nom" name="fullname" required>
 
+    <label >Email</label>
+    <input type="email" placeholder="Entrer votre Email" name="email" required>
+
+    <label >Password</label>
+    <input type="password" placeholder="Entrer votre Mot de Passe" name="password" required>
+
+    
+      <button type="submit" class="connect">Se connecter</button>
+      <div class="divenregistrer" >
+      <button class="enregistrer" >S'enregistrer</button>
+</div>
+    
+  </div>
+  </div>
+
+    <!-- content -->
+
+    <!-- footer  -->
+    <!-- end footer -->
+
+    <script src="../Js/navbar.js"></script>
+    <script>
+        AOS.init(); 
+    </script>
 
 </body>
+
 </html>
