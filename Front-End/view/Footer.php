@@ -1,7 +1,7 @@
 <!-- footer  -->
 <footer>
         <div class="footerOno">
-            <div class="phone"> <img src="../assets/phone.png" /></div>
+            <div class="phone"> <img src="../assets/myphone.png" /></div>
             <div class="appStore">
                 <h4>Telecharger notre application</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi reprehenderit minima cumque
