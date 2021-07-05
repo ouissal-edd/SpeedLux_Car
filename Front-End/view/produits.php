@@ -43,8 +43,9 @@
        </div>
 
        <div class="events reversed">
-           <div>
-           <video src="../assets/video.mp4" muted loop autoplay class="video"></video> </div>
+           <div class="vid" >
+           <video src="../assets/video.mp4" muted loop autoplay class="video"></video> 
+        </div>
         <div class="eventDiscriptionReversed">
          <h1 class="descriptionHeader">International Fair</h1>
          <p class="descriptionPar">Held in November, the International

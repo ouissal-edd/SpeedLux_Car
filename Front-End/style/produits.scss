@@ -2,6 +2,8 @@
 @import "./footer";
 
 $MyReed:#DA1C36;
+$MyBlue:#000E44;
+
 @mixin MyBtn {
     padding: 1%;
     margin-top: 8%;
@@ -66,7 +68,7 @@ button {
     .eventDiscription{
         width: 350px;
         text-align: left;
-        background-color: #232144 ;
+        background-color: white ;
         color: white;
         height: fit-content;
         padding: 20px;
@@ -91,8 +93,8 @@ button {
     .eventDiscriptionReversed{
         width: 350px;
         text-align: left;
-        background-color: #232144 ;
-        color: white;
+        background-color: white ;
+        color: $;
         height: fit-content;
         padding: 20px;
         position: absolute;
