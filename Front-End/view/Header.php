@@ -12,7 +12,7 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="home.php">acceuil</a></li>
-                <li><a href="#">Produit</a></li>
+                <li><a href="produits.php">Produit</a></li>
                 <li><a href="services.php">Nos Services</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a  href="Connect.php">Se connecter</a></li>
