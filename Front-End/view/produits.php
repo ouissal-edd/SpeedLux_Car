@@ -28,7 +28,32 @@
 
     <div>
         <h3>Nos Modeles</h3>
-    </div>
+
+<div class="models">
+        <div class="events">
+        <img class="img" name="SlideShow" >
+        <div class="eventDiscription">
+         <h1 class="descriptionHeader">Winter Production</h1>
+         <p class="descriptionPar">In the winter trimester, our attention.
+                                   The All School Production,
+                                   of singing, dancing and acting.
+                                   It brings together th and high
+                                   school.</p>
+        </div>
+       </div>
+
+       <div class="events reversed">
+           <div>
+           <video src="../assets/video.mp4" muted loop autoplay class="video"></video> </div>
+        <div class="eventDiscriptionReversed">
+         <h1 class="descriptionHeader">International Fair</h1>
+         <p class="descriptionPar">Held in November, the International
+                                   Fair brings together the formidable
+                                   organizational power of our two
+                                   Parent Associations.</p>
+        </div>
+       </div>
+       </div>
 
     <!-- content -->
 
@@ -37,7 +62,7 @@
     <!-- end footer -->
 
     <script src="../Js/navbar.js"></script>
-    <script src="../Js/service.js"></script>
+    <script src="../Js/produits.js"></script>
 
     <script>
         AOS.init(); 

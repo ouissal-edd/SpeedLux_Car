@@ -66,6 +66,8 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhUz7hjwBesJrjnJv6Xepb-tz_KYh98wA&callback=initMap&libraries=&v=weekly"
       async defer
     ></script> -->
+    <script src="../JS/contact"> </script>
+    <
     <script>
         AOS.init(); 
     </script>
