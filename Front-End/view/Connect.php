@@ -17,7 +17,9 @@
 <!-- include Header -->
 
     <!-- content -->
-    <div class="hero">
+
+    <div id="heroOne" class="hero">
+      <div class="cc">
   <div class="container">
   <h1>Se Connecter</h1>
     <hr>
@@ -29,15 +31,17 @@
     <input type="password" placeholder="Entrer votre Mot de Passe" name="password" required>
 
     
-      <button type="submit" class="connect">Se connecter</button>
+      <button type="submit"  class="connect">Se connecter</button>
       <div class="divenregistrer" >
-      <button class="enregistrer" >S'enregistrer</button>
+      <button class="enregistrer" onclick="EnregistreBlock()" >S'enregistrer</button>
 </div>
     
   </div>
   </div>
-
-  <div class="heroTwo">
+  </div>
+    
+  <div id="heroTwo" class="hero">
+  <div class="cc">
   <div class="container">
   <h1>S'enregistrer</h1>
     <hr>
@@ -51,19 +55,19 @@
     <input type="password" placeholder="Entrer votre Mot de Passe" name="password" required>
 
     
-      <button type="submit" class="connect">Se connecter</button>
+      <button type="submit" class="connect"> S'enregistrer</button>
       <div class="divenregistrer" >
-      <button class="enregistrer" >S'enregistrer</button>
+      <button class="enregistrer" onclick="ConnectBlock()" >Se connecter</button>
 </div>
-    
+</div>
   </div>
   </div>
-
     <!-- content -->
 
     <!-- footer  -->
     <!-- end footer -->
 
+    <script src="../Js/connect.js"></script>
     <script src="../Js/navbar.js"></script>
     <script>
         AOS.init(); 

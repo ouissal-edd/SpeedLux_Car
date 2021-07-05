@@ -16,6 +16,10 @@ $MyBlue:#000E44;
 
 
 
+#heroOne{
+    display: block;
+}
+
    .hero{
     position: relative;
     min-height: 113vh;
@@ -27,9 +31,9 @@ $MyBlue:#000E44;
     background: linear-gradient(45deg, $MyBlue, $MyReed);
 background-size: cover ;
 color: white;
-   
+   .cc{
+       margin-top: 9%;
     .container{
-        margin-top: 13%;
         margin: auto;
         width: 70%;
         background: white;
@@ -75,6 +79,9 @@ h1{
 
                 float: right;
 margin-top: 2%;
+&:hover{
+    opacity: 0.8 ;
+} 
               .enregistrer{
                   margin-top: 2%;
                   background-color: $MyBlue;
@@ -87,9 +94,14 @@ margin-top: 2%;
                 }
               }
           }
+        }
             }
+
+            #heroTwo{
+                display: none;
+            }
+           
         
-      
 
 
 

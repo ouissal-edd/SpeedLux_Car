@@ -136,6 +136,10 @@
   }
 }
 
+#heroOne {
+  display: block;
+}
+
 .hero {
   position: relative;
   min-height: 113vh;
@@ -158,8 +162,11 @@
   color: white;
 }
 
-.hero .container {
-  margin-top: 13%;
+.hero .cc {
+  margin-top: 9%;
+}
+
+.hero .cc .container {
   margin: auto;
   width: 70%;
   background: white;
@@ -167,17 +174,17 @@
   padding: 8%;
 }
 
-.hero .container h1 {
+.hero .cc .container h1 {
   color: #000E44;
   font-size: 35px;
 }
 
-.hero .container hr {
+.hero .cc .container hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
 
-.hero .container input {
+.hero .cc .container input {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -188,7 +195,7 @@
   outline: none;
 }
 
-.hero .container .connect {
+.hero .cc .container .connect {
   width: 50%;
   background-color: #DA1C36;
   color: white;
@@ -200,16 +207,20 @@
   border-radius: 15px;
 }
 
-.hero .container .connect:hover {
+.hero .cc .container .connect:hover {
   opacity: 0.8;
 }
 
-.hero .container .divenregistrer {
+.hero .cc .container .divenregistrer {
   float: right;
   margin-top: 2%;
 }
 
-.hero .container .divenregistrer .enregistrer {
+.hero .cc .container .divenregistrer:hover {
+  opacity: 0.8;
+}
+
+.hero .cc .container .divenregistrer .enregistrer {
   margin-top: 2%;
   background-color: #000E44;
   color: white;
@@ -218,6 +229,10 @@
   border: none;
   cursor: pointer;
   border-radius: 15px;
+}
+
+#heroTwo {
+  display: none;
 }
 
 @media screen and (max-width: 300px) {
