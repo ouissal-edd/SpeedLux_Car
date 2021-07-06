@@ -69,10 +69,11 @@ button {
         width: 350px;
         text-align: left;
         background-color: white ;
-        color: white;
+        color: $MyBlue;
         height: fit-content;
         padding: 20px;
         position: absolute;
+        box-shadow :10px 5px 5px #eceff1;
         margin-left: 550px;
         
         .descriptionHeader{
@@ -94,11 +95,12 @@ button {
         width: 350px;
         text-align: left;
         background-color: white ;
-        color: $;
+        color: $MyBlue;
         height: fit-content;
         padding: 20px;
         position: absolute;
         margin-right: 550px;
+        box-shadow :10px 5px 5px #eceff1;
         .descriptionHeader{
             font-size: 30px;
         }

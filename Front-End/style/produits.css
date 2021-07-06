@@ -424,13 +424,15 @@
 .models .events .eventDiscription {
   width: 350px;
   text-align: left;
-  background-color: #232144;
-  color: white;
+  background-color: white;
+  color: #000E44;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 20px;
   position: absolute;
+  -webkit-box-shadow: 10px 5px 5px #eceff1;
+          box-shadow: 10px 5px 5px #eceff1;
   margin-left: 550px;
 }
 
@@ -457,14 +459,16 @@
 .models .reversed .eventDiscriptionReversed {
   width: 350px;
   text-align: left;
-  background-color: #232144;
-  color: white;
+  background-color: white;
+  color: #000E44;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 20px;
   position: absolute;
   margin-right: 550px;
+  -webkit-box-shadow: 10px 5px 5px #eceff1;
+          box-shadow: 10px 5px 5px #eceff1;
 }
 
 .models .reversed .eventDiscriptionReversed .descriptionHeader {

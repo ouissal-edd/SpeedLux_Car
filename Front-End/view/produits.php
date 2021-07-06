@@ -44,7 +44,8 @@
 
        <div class="events reversed">
            <div class="vid" >
-           <video src="../assets/video.mp4" muted loop autoplay class="video"></video> 
+           <img class="img" name="SlideShow" >
+
         </div>
         <div class="eventDiscriptionReversed">
          <h1 class="descriptionHeader">International Fair</h1>
