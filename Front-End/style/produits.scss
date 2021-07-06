@@ -118,3 +118,33 @@ button {
     }
 }
 }
+
+.ALL{
+    display: flex;
+    flex-direction: column;
+  
+        h3{
+            font-size: 35px;
+            color: white;
+        }
+        h4{
+            font-size: 30px;
+            color: white;  
+    }
+    .ALLrow{
+        display: flex;
+        flex-direction: row;
+
+        .btnAll{
+            display: flex;
+            flex-direction: row;
+            h4{
+                font-size: 30px;
+                color: white;  
+            }
+        }
+    }
+
+
+
+}

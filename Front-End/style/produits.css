@@ -485,4 +485,12 @@
 .models .reversed .eventDiscriptionReversed .descriptionPar {
   font-size: 20px;
 }
+
+.divVideo {
+  width: 30%;
+}
+
+.divVideo video {
+  width: 100%;
+}
 /*# sourceMappingURL=produits.css.map */

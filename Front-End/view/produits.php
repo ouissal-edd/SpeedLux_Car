@@ -56,6 +56,29 @@
        </div>
        </div>
 
+
+       <div class="ALL">
+       
+       <h3>Cherchez ce que vous préférez et calculer </h3>
+       <h4>Les Meilleurs Offres sont a vos mains</h4>
+       <h4>Tous est possible avec SPEEDLUX</h4>
+
+       <div class="Allrow">
+
+       <div class="btnAll">
+        <img src="../assets/next.png">
+       <h4>Calculer</h4>
+</div>
+
+       <div class="btnAll">
+       <div>
+        <img src="../assets/next.png">
+       <h4>Filtrer</h4>
+       </div>
+
+    </div>
+    </div>
+
     <!-- content -->
 
     <!-- footer  -->
