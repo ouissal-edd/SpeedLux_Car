@@ -396,6 +396,13 @@
   background: #DA1C36;
 }
 
+.titlemodels h3 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 2%;
+  color: #000E44;
+}
+
 .models {
   width: 90%;
   margin: auto;
@@ -451,7 +458,7 @@
           flex-direction: row-reverse;
 }
 
-.models .reversed .video {
+.models .reversed .imgTwo {
   width: 650px;
   position: relative;
 }

@@ -27,7 +27,7 @@
     </div>
 
     <div>
-        <h3>Nos Modeles</h3>
+       <div class="titlemodels"> <h3>Nos Modeles</h3></div>
 
 <div class="models">
         <div class="events">
@@ -44,8 +44,7 @@
 
        <div class="events reversed">
            <div class="vid" >
-           <img class="img" name="SlideShow" >
-
+           <img class="imgTwo" name="SlideShowTwo" >
         </div>
         <div class="eventDiscriptionReversed">
          <h1 class="descriptionHeader">International Fair</h1>

@@ -12,4 +12,21 @@ function SlideShow() {
     setTimeout("SlideShow()", 2000);
 
 }
-SlideShow()
+SlideShow();
+
+
+var j = 0;
+var slidImgTwo = ["../assets/7.png", "../assets/8.png", "../assets/9.png"];
+
+function SlideShowTwo() {
+    document.SlideShowTwo.src = slidImgTwo[j];
+    if (j < slidImgTwo.length - 1) {
+        j++;
+    } else {
+        j = 0;
+    }
+
+    setTimeout("SlideShowTwo()", 2000);
+
+}
+SlideShowTwo();

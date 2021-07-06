@@ -49,7 +49,15 @@ button {
 }
 }
 
-
+.titlemodels{
+    h3{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 2%;
+    color: $MyBlue;
+    }
+   
+}
 
 .models{
     width: 90%;
@@ -87,7 +95,7 @@ button {
 
 .reversed{
     flex-direction: row-reverse;
-    .video{
+    .imgTwo{
         width: 650px;
         position: relative;
     }

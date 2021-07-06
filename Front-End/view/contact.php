@@ -27,7 +27,7 @@
         <h5>envoyez Maintenant! </h5>
     </div>
 <!-- content -->
-<h2 data-aos="fade-right" class="titleOne">Contact</h2>
+<h2 data-aos="fade-right" id="tec" class="titleOne">Contact</h2>
 <div  data-aos="fade-right" class="container">
   <form action="action_page.php">
 
