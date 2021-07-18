@@ -1,5 +1,4 @@
     <!-- Header -->
-
     <nav class="navbar">
         <div class="logo"><img src="../assets/Logo.png" /></div>
 
@@ -15,7 +14,7 @@
                 <li><a href="produits.php">Produit</a></li>
                 <li><a href="services.php">Nos Services</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a  href="Connect.php">Se connecter</a></li>
+                <li><a href="Connect.php">Se connecter</a></li>
             </ul>
         </div>
     </nav>

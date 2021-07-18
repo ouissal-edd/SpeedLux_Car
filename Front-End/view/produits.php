@@ -12,85 +12,108 @@
 </head>
 
 <body>
-<!-- include Header -->
-<?php @include_once('Header.php'); ?>
-<!-- include Header -->
+    <!-- include Header -->
+    <?php @include_once('Header.php'); ?>
+    <!-- include Header -->
 
     <!-- content -->
     <div class="hero">
-        <h1 data-aos="fade-right" >Découvrir Le type de voiture </h1>
+        <h1 data-aos="fade-right">Découvrir Le type de voiture </h1>
         <h1>que vous voulez</h1>
         <div class="btn">
-        <button data-aos="fade-right" >Trouver Voiture</button>
-        <button data-aos="fade-right" >Calculez estimation</button>
+            <button data-aos="fade-right">Trouver Voiture</button>
+            <button data-aos="fade-right">Calculez estimation</button>
         </div>
     </div>
 
     <div>
-       <div class="titlemodels"> <h3>Nos Modeles</h3></div>
-
-<div class="models">
-        <div class="events">
-        <img class="img" name="SlideShow" >
-        <div class="eventDiscription">
-         <h1 class="descriptionHeader">Winter Production</h1>
-         <p class="descriptionPar">In the winter trimester, our attention.
-                                   The All School Production,
-                                   of singing, dancing and acting.
-                                   It brings together th and high
-                                   school.</p>
+        <div class="titlemodels">
+            <h3>Nos Modeles</h3>
         </div>
-       </div>
 
-       <div class="events reversed">
-           <div class="vid" >
-           <img class="imgTwo" name="SlideShowTwo" >
+        <div class="models">
+            <div class="events">
+                <img class="img" name="SlideShow">
+                <div class="eventDiscription">
+                    <h1 class="descriptionHeader">Winter Production</h1>
+                    <p class="descriptionPar">In the winter trimester, our attention.
+                        The All School Production,
+                        of singing, dancing and acting.
+                        It brings together th and high
+                        school.</p>
+                </div>
+            </div>
+
+            <div class="events reversed">
+                <div class="vid">
+                    <img class="imgTwo" name="SlideShowTwo">
+                </div>
+                <div class="eventDiscriptionReversed">
+                    <h1 class="descriptionHeader">International Fair</h1>
+                    <p class="descriptionPar">Held in November, the International
+                        Fair brings together the formidable
+                        organizational power of our two
+                        Parent Associations.</p>
+                </div>
+            </div>
         </div>
-        <div class="eventDiscriptionReversed">
-         <h1 class="descriptionHeader">International Fair</h1>
-         <p class="descriptionPar">Held in November, the International
-                                   Fair brings together the formidable
-                                   organizational power of our two
-                                   Parent Associations.</p>
+
+
+        <div class="DivDescriptif">
+
+            <h3>Cherchez ce que vous préférez et calculer </h3>
+            <h4>Les Meilleurs Offres sont a vos mains</h4>
+            <h5>Tous est possible avec SPEEDLUX</h5>
+            <div class="Choix">
+                <div class="ChoixBoutton">
+                    <div class="btnChoix">
+                        <img src="../assets/next">
+                    </div>
+                    <h3>Calculer</h3>
+                </div>
+
+                <div class="ChoixBoutton">
+                    <div class="btnChoix">
+                        <img src="../assets/next">
+                    </div>
+                    <h3>Filtrer</h3>
+                </div>
+            </div>
+
         </div>
-       </div>
-       </div>
 
+        <div class="Filtre">
+            <div onclick="TableFilter()" class="divfil">
+                <div class="photofiltre">
+                    <img src="../assets/filter.png">
+                    <h3>Filtrer</h3>
+                </div>
+                <div id="typeCar"></div>
+            </div>
+            <div class="TtProduits">
+                <img src="../assets/4.png" alt="" class="event">
+                <div class="Description">
+                    <h3>Berline</h3>
+                    <h4>Essence</h4>
+                    <p>Done for the poor children ,Our team make a big event for the poor children for make him happy happiness is the best gift to done Notre programme vous fait découvrir toute la filière événementielle, vous met en contact avec ses acteurs et vous place dans un environnement professionnel riche et permanent..</p>
+                    <button>Reservez</button>
+                </div>
+            </div>
 
-       <div class="ALL">
-       
-       <h3>Cherchez ce que vous préférez et calculer </h3>
-       <h4>Les Meilleurs Offres sont a vos mains</h4>
-       <h4>Tous est possible avec SPEEDLUX</h4>
+        </div>
 
-       <div class="Allrow">
+        <!-- content -->
 
-       <div class="btnAll">
-        <img src="../assets/next.png">
-       <h4>Calculer</h4>
-</div>
+        <!-- footer  -->
+        <?php @include_once('Footer.php'); ?>
+        <!-- end footer -->
 
-       <div class="btnAll">
-       <div>
-        <img src="../assets/next.png">
-       <h4>Filtrer</h4>
-       </div>
+        <script src="../Js/navbar.js"></script>
+        <script src="../Js/produits.js"></script>
 
-    </div>
-    </div>
-
-    <!-- content -->
-
-    <!-- footer  -->
-    <?php @include_once('Footer.php'); ?>
-    <!-- end footer -->
-
-    <script src="../Js/navbar.js"></script>
-    <script src="../Js/produits.js"></script>
-
-    <script>
-        AOS.init(); 
-    </script>
+        <script>
+            AOS.init();
+        </script>
 
 </body>
 

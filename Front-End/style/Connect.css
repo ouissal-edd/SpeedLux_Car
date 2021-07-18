@@ -103,7 +103,7 @@
             align-items: flex-start;
   }
   .navbar .logo {
-    font-size: 1.5rem;
+    width: 110px;
   }
   .navbar .navbar-links {
     display: none;
@@ -211,28 +211,70 @@
   opacity: 0.8;
 }
 
-.hero .cc .container .divenregistrer {
-  float: right;
-  margin-top: 2%;
-}
-
-.hero .cc .container .divenregistrer:hover {
-  opacity: 0.8;
-}
-
-.hero .cc .container .divenregistrer .enregistrer {
-  margin-top: 2%;
+.hero .cc .container .enregistrer {
   background-color: #000E44;
   color: white;
   padding: 14px 90px;
-  margin: 8px 0;
   border: none;
   cursor: pointer;
   border-radius: 15px;
+  float: right;
 }
 
 #heroTwo {
   display: none;
+}
+
+@media (max-width: 1050px) {
+  .hero .cc {
+    margin-top: 35%;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero .cc {
+    margin-top: 35%;
+  }
+  .hero .cc .container {
+    padding: 5%;
+    padding-bottom: 30%;
+    width: 95%;
+  }
+  .hero .cc .container h1 {
+    font-size: 25px;
+  }
+  .hero .cc .container .enregistrer {
+    background-color: #000E44;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 50px 40px;
+  }
+  .hero .cc {
+    margin-top: 35%;
+  }
+  .hero .cc .container h1 {
+    font-size: 18px;
+  }
+  .hero .cc .container label {
+    font-size: 11px;
+  }
+  .hero .cc .container input {
+    padding: 12px;
+  }
+  .hero .cc .container button {
+    font-size: 11px;
+    padding: 12px;
+  }
 }
 
 @media screen and (max-width: 300px) {

@@ -13,9 +13,9 @@
 </head>
 
 <body>
-<!-- include Header -->
-<?php @include_once('Header.php'); ?>
-<!-- include Header -->
+    <!-- include Header -->
+    <?php @include_once('Header.php'); ?>
+    <!-- include Header -->
 
     <!-- content -->
     <div class="hero">
@@ -33,7 +33,7 @@
 
     <script src="../Js/navbar.js"></script>
     <script>
-        AOS.init(); 
+        AOS.init();
     </script>
 
 </body>

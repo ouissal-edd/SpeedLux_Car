@@ -102,3 +102,57 @@ $MyBlue:#000E44;
  }
 
 
+ 
+@media (max-width: 1024px){
+    .hero{
+        padding: 50px 30px;
+
+        h1 {
+            font-size: 30px;
+        }
+        h5{
+            font-size: 20px;
+            text-align: center;
+        }
+        button {
+            font-size: 15px;
+        }
+        .bas{
+            display:none;
+        }
+        .fornon{
+            display: none;
+        }
+    }
+    .titleOne{
+        font-size: 30px;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 800px){
+    .hero{
+        h1 {
+            font-size: 20px;
+        }
+        h5{
+            font-size: 15px;
+        }
+        button {
+            font-size: 10px;
+        }
+    }
+    .titleOne{
+        font-size: 20px;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
+
+
+

@@ -103,7 +103,7 @@
             align-items: flex-start;
   }
   .navbar .logo {
-    font-size: 1.5rem;
+    width: 110px;
   }
   .navbar .navbar-links {
     display: none;
@@ -486,11 +486,157 @@
   font-size: 20px;
 }
 
-.divVideo {
-  width: 30%;
+.DivDescriptif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../assets/cal.png);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-.divVideo video {
+.DivDescriptif h3 {
+  font-size: 30px;
+}
+
+.DivDescriptif h4 {
+  font-size: 25px;
+}
+
+.DivDescriptif h5 {
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+
+.DivDescriptif .Choix {
+  gap: 208%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.DivDescriptif .Choix .ChoixBoutton {
+  gap: 17%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.DivDescriptif .Choix .ChoixBoutton h3 {
+  font-size: 20px;
+}
+
+.DivDescriptif .Choix .ChoixBoutton .btnChoix {
+  width: 61px;
+}
+
+.DivDescriptif .Choix .ChoixBoutton .btnChoix img {
   width: 100%;
+}
+
+.Filtre .divfil {
+  border: solid 1px #000E44;
+  width: 8%;
+  margin-left: 16%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1%;
+}
+
+.Filtre .divfil .photofiltre {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Filtre .divfil .photofiltre img {
+  width: 100%;
+}
+
+.Filtre .divfil .photofiltre h3 {
+  font-size: 20px;
+  color: #000E44;
+}
+
+.Filtre .TtProduits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2%;
+}
+
+.Filtre .TtProduits img {
+  width: 650px;
+  height: 400px;
+}
+
+.Filtre .TtProduits .Description {
+  background-color: white;
+  width: 650px;
+  border: solid 1px #000E44;
+  height: 400px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.Filtre .TtProduits .Description h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15%;
+  color: #DA1C36;
+}
+
+.Filtre .TtProduits .Description h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1%;
+  color: #000E44;
+}
+
+.Filtre .TtProduits .Description p {
+  margin-top: 3%;
+  color: black;
+  font-size: 15px;
+}
+
+.Filtre .TtProduits .Description button {
+  margin-top: 8%;
+  padding: 2%;
+  width: 100%;
+  background-color: #000E44;
+  color: white;
+  border-radius: 30px;
+  border: none;
 }
 /*# sourceMappingURL=produits.css.map */

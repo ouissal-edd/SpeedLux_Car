@@ -118,33 +118,113 @@ button {
     }
 }
 }
-
-.ALL{
+.DivDescriptif{
     display: flex;
     flex-direction: column;
-  
-        h3{
-            font-size: 35px;
-            color: white;
-        }
-        h4{
-            font-size: 30px;
-            color: white;  
+     background: url(../assets/cal.png); 
+    align-items: center;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    h3{
+        font-size: 30px;
     }
-    .ALLrow{
+    h4{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 25px;
+        margin-bottom: 2%;
+    }
+      
+    .Choix{
+        gap: 208%;
         display: flex;
-        flex-direction: row;
-
-        .btnAll{
+        flex-direction:row;
+        justify-content: center;
+        .ChoixBoutton{
+            gap: 17%;
             display: flex;
             flex-direction: row;
-            h4{
-                font-size: 30px;
-                color: white;  
+            h3{
+               font-size:  20px;
+            }
+        
+        .btnChoix{
+            width: 61px;
+            img{
+                width: 100%;
+            }
             }
         }
     }
+}
 
-
-
+.Filtre{
+    .divfil{
+        border: solid 1px $MyBlue;
+        width: 8%;
+        margin-left: 16%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding: 1%;
+    
+    .photofiltre{
+        width: 30px;
+        display: flex;
+        flex-direction: row;
+        img{
+            width: 100%;
+        }
+        h3{
+        font-size: 20px;
+        color: $MyBlue;
+        }
+    }
+}
+    .TtProduits{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 2%;
+        img {
+            width: 650px;
+            height: 400px;
+        }
+        .Description{
+            background-color: white;
+            width: 650px;
+            border: solid 1px $MyBlue;
+            height: 400px;
+            padding-left: 3%;
+    padding-right: 3%;
+            h3{
+                font-size: 25px;
+                font-weight: bold;
+                margin-top: 15%;
+                color: $MyReed;
+            }
+            h4{
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 1%;
+                color: $MyBlue;  
+            }
+            
+            p{
+                margin-top: 3%;
+                color: black;
+                font-size: 15px;
+            }
+            button{
+                margin-top: 8%;
+                padding: 2%;
+                width: 100%;
+                background-color: $MyBlue;
+                color: white;
+                border-radius: 30px;
+                border: none;
+            }
+        }
+    } 
 }

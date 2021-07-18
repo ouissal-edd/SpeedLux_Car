@@ -1,3 +1,4 @@
+// Produits Slider
 var i = 0;
 var slidImg = ["../assets/4.png", "../assets/5.png", "../assets/6.png"];
 
@@ -30,3 +31,13 @@ function SlideShowTwo() {
 
 }
 SlideShowTwo();
+
+// END PRODUCT SLIDER
+
+// Filter
+function TableFilter() {
+    document.getElementById("typeCar").innerHTML = '<div> <select>  <option>Choisir </option> <option>Berline </option> <option>Break </option> <option>Monospace </option> <option>Coupe </option>  <option>Cabriolet </option>  <option>Limousine </option>  </select> </div> <div>'
+
+}
+
+// END FILTER
