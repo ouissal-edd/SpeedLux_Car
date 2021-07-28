@@ -48,12 +48,16 @@ ul {
 
  li {
   list-style: none;
+ 
+  
   a {
     display: block;
     text-decoration: none;
     color: white;
     font-size: 1rem;
       padding: 2rem;
+    
+ 
   
   &:hover{
     border-bottom: solid 2px $MyReed ;
@@ -62,6 +66,9 @@ ul {
 }
 }
 }
+
+
+
  /* #connecter {
     padding-bottom: 4%;
     padding-top: 4%;

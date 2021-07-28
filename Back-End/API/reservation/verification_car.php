@@ -1,10 +1,6 @@
 <?php
-
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json; charset=UTF-8");
-header("Access-Control-Allow-Methods: POST");
-header("Access-Control-Max-Age: 3600");
-header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json');
 
 include_once '../../config/Database.php';
 
@@ -20,10 +16,6 @@ $reservation = new Reservation($db);
 
 $data = json_decode(file_get_contents("php://input"));
 
-$reservation->pickup_date = $data->pickup_date;
-$reservation->return_date = $data->return_date;
-
-
 $result = $reservation->verification_car();
 $num = $result->rowCount();
 
@@ -35,6 +27,7 @@ if ($num > 0) {
         extract($row);
 
         $cars_free = array(
+            'id' => $id,
             'car_name' => $car_name,
             'color' => $color,
             'model' => $model,

@@ -15,7 +15,6 @@ $resultat = $car->read_Car();
 $num = $resultat->rowCount();
 if ($num > 0) {
     $cars_arr = array();
-    // $cars_arr['data'] = array();
 
     while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
         //   Importe les variables dans la table

@@ -1,0 +1,317 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  /* justify-content: space-between; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* background-color: rgb(0, 0, 0); */
+  color: white;
+  width: 100%;
+  /* #connecter {
+    padding-bottom: 4%;
+    padding-top: 4%;
+    margin-top: 15%;
+} */
+}
+
+.navbar .logo {
+  width: 200px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navbar .logo img {
+  width: 100%;
+}
+
+.navbar .navbar-links {
+  height: 100%;
+  right: 1px;
+}
+
+.navbar .navbar-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  float: right;
+  top: 10px;
+  padding: 0;
+  position: absolute;
+  right: 25px;
+}
+
+.navbar .navbar-links ul li {
+  list-style: none;
+}
+
+.navbar .navbar-links ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.navbar .navbar-links ul li a:hover {
+  border-bottom: solid 2px #DA1C36;
+}
+
+.navbar .toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.navbar .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .navbar .logo {
+    width: 110px;
+  }
+  .navbar .navbar-links {
+    display: none;
+    width: 100%;
+    padding-bottom: 6%;
+  }
+  .navbar .navbar-links ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .navbar .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+  .navbar .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 50vh;
+  padding: 50px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.404)), to(rgba(0, 0, 0, 0.527))), url(../assets/reserv.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.527)), url(../assets/reserv.png);
+  background-size: cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #000E44;
+}
+
+#countainer {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  padding-left: 3%;
+}
+
+#countainer .ImgBook {
+  width: 50%;
+  text-align: center;
+}
+
+#countainer .ImgBook img {
+  width: 65%;
+}
+
+#countainer .InputBooking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5%;
+}
+
+#countainer .InputBooking input {
+  width: 80%;
+  padding: 12px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #001771;
+  outline: none;
+  resize: none;
+}
+
+#countainer .InputBooking button {
+  width: 80%;
+  padding: 12px 0;
+  font-size: 16px;
+  background-color: #001771;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+#heroTwo {
+  display: none;
+}
+
+#heroTwo .AllCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 9%;
+  gap: 8%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#heroTwo .AllCard .card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#heroTwo .AllCard .card .calen {
+  width: 15%;
+}
+
+#heroTwo .AllCard .card .calen img {
+  width: 100%;
+}
+
+#heroTwo .AllCard .card h4 {
+  font-size: 15px;
+  margin-left: 4%;
+}
+
+#heroTwo .AllCard .card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#verificationCar #CarAvail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5%;
+}
+
+#verificationCar #CarAvail .cardd {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+/*# sourceMappingURL=Booking.css.map */

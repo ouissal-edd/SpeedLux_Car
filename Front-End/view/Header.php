@@ -14,7 +14,8 @@
                 <li><a href="produits.php">Produit</a></li>
                 <li><a href="services.php">Nos Services</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="Connect.php">Se connecter</a></li>
+                <li><a id="connex" href="Connect.php">Se connecter</a></li>
+                <li><a id="deconnex" onclick="logOutt()">Deconnexion</a></li>
             </ul>
         </div>
     </nav>

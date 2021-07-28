@@ -22,6 +22,7 @@ if ($num > 0) {
     extract($row);
 
     $users_ithem = array(
+      'user_id' => $user_id,
       'user_email' => $user_email,
       'full_name' => $full_name,
       'password' => $password,

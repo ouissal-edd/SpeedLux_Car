@@ -25,19 +25,13 @@ $users->full_name = $data->full_name;
 $users->password = $data->password;
 
 
-$count = $users->UserExist();
+$users->create_users();
+echo json_encode(
+    array(
+        'msg' => 'Users created successfully.'
+    )
+);
 
-if ($count > 0) {
-    echo "deja existe";
-} else {
-    $users->create_users();
-    echo json_encode(
-        array(
-            'id' => $users->user_id,
-            'msg' => 'Users created successfully.'
-        )
-    );
-}
 
 ?>
 

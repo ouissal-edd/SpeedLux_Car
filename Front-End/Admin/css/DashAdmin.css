@@ -11241,3 +11241,7 @@ color: #DA1C36;
 .MyBackgroundForTables{
   background: #0b13a1;
 }
+#deleteForReserv {
+  cursor: pointer;
+  background: none;
+}

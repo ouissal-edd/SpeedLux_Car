@@ -70,13 +70,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="car-types.php">
+                <a class="nav-link" href="car_types.php">
                     <i class="fas fa-car-alt"></i>
                     <span>Type Voiture</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="cars.php">
+                <a class="nav-link" href="Cars.php">
                     <i class="fas fa-car"></i>
                     <span>Voitures</span>
                 </a>
@@ -93,7 +93,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="users.php">
+                <a class="nav-link" href="Users.php">
                     <i class="far fa-address-card"></i>
                     <span>Clients et Admin</span>
                 </a>
@@ -127,7 +127,7 @@
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../" target="_blank">
+                            <a class="nav-link" href="home.php" target="_blank">
                                 <i class="far fa-eye"></i>
                                 <span style="margin-left: 5px;">Retour au site Web</span>
                             </a>

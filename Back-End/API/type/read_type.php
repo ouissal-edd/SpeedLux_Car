@@ -15,20 +15,21 @@ $resultat = $type->read_Type();
 $num = $resultat->rowCount();
 if ($num > 0) {
     $types_arr = array();
-    $types_arr['data'] = array();
+    // $types_arr['data'] = array();
 
     while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
         //   Importe les variables dans la table
         extract($row);
 
         $types_ithem = array(
+            'type_id' => $type_id,
             'type_label' => $type_label,
             'type_description' => $type_description,
 
 
         );
 
-        array_push($types_arr['data'], $types_ithem);
+        array_push($types_arr, $types_ithem);
     }
 
     echo json_encode($types_arr);

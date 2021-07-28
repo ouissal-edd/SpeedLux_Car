@@ -39,16 +39,16 @@ class Users
     public function create_users()
     {
 
-        $query = 'INSERT INTO ' . $this->table . ' SET  user_email = :user_email , full_name= :full_name , password = :password  ';
+        $query = 'INSERT INTO ' . $this->table . ' SET  user_email = :user_email , full_name= :full_name , password = :password ';
         $stmt = $this->conn->prepare($query);
 
-        $this->user_email = htmlspecialchars(strip_tags($this->user_email));
         $this->full_name = htmlspecialchars(strip_tags($this->full_name));
+        $this->user_email = htmlspecialchars(strip_tags($this->user_email));
         $this->password = htmlspecialchars(strip_tags($this->password));
 
 
-        $stmt->bindParam(":user_email", $this->user_email);
         $stmt->bindParam(":full_name", $this->full_name);
+        $stmt->bindParam(":user_email", $this->user_email);
         $stmt->bindParam(":password", $this->password);
 
 
@@ -146,7 +146,11 @@ class Users
 
         if ($count == 1) {
             $this->id_user = $row['user_id'];
-            return  $row['user_id'];
+            $this->role = $row['role'];
+            $login = array($this->id_user, $this->role);
+
+
+            return $login;
         } else {
             return false;
         }

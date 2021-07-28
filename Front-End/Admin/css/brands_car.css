@@ -35,4 +35,8 @@
        color: black;
   text-align: center;
   }
+  #deleteForBrands{
+    cursor: pointer;
+  background: none;
+  }
   

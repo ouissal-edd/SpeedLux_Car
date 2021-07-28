@@ -22,6 +22,7 @@ if ($num > 0) {
         extract($row);
 
         $brands_ithem = array(
+            'brand_id' => $brand_id,
             'brand_name' => $brand_name,
             'brand_image' => $brand_image,
             'num' => $num,

@@ -83,10 +83,11 @@ async function JointureReservation() {
                 <td>${InfoReservationUsers[i].return_date} </td>
                 <td>${InfoReservationUsers[i].pickup_location} </td>
                 <td>${InfoReservationUsers[i].return_location} </td>
-                <td><button class="btn btn-xs btn-outline btn-danger btn-card btn-add__delete" onclick="deleteReservation(${InfoReservationUsers[i].reservation_id})"><i class="fas fa-trash"></i></td>
+                <td><button id="deleteForReserv" class="btn btn-xs btn-outline btn-danger btn-card btn-add__delete" onclick="deleteReservation(${InfoReservationUsers[i].reservation_id})"><i class="fas fa-trash"></i></td>
 
              </tr> 
-             </tbody>`
+             </tbody>
+             `
     }
 
 }

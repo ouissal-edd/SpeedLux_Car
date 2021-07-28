@@ -101,4 +101,32 @@ class Car
 
         return $stm;
     }
+
+    public function JointureCars()
+    {
+        $query = 'SELECT car_name ,brand_name,type_label ,color, id , model ,description  FROM `cars` INNER JOIN car_brands ON car_brands.brand_id=car_brands.brand_id INNER JOIN car_types ON car_types.type_id=car_types.type_id WHERE cars.type_id = car_types.type_id AND cars.brand_id=car_brands.brand_id ';
+        $stm = $this->conn->prepare($query);
+        $stm->execute();
+
+        return $stm;
+    }
+
+
+    public function read_single()
+    {
+        $query = 'SELECT * FROM ' . $this->table . '  WHERE id = ? LIMIT 0,1';
+
+        $stmt = $this->conn->prepare($query);
+
+        $stmt->bindParam(1, $this->id);
+
+        $stmt->execute();
+
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        $this->car_name = $row['car_name'];
+        $this->color = $row['color'];
+        $this->model = $row['model'];
+        $this->description = $row['description'];
+    }
 }

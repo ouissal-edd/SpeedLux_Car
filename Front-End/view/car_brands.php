@@ -7,7 +7,7 @@
     <div class="card-body">
 
 
-        <button class="btn btn-success btn-sm" id="button_ADD_Brand" style="margin-bottom: 30px; margin-top:20px" type="button" data-toggle="modal" data-target="#add_new_brand" data-placement="top">
+        <button class="btn btn-primary btn-sm" id="button_ADD_Brand" style="margin-bottom: 30px; margin-top:20px" type="button" data-toggle="modal" data-target="#add_new_brand" data-placement="top">
             <i class="fa fa-plus"></i>
             Ajouter Nouvelle Marque
         </button>
@@ -27,7 +27,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form>
+                <form id="ADD_Brands" enctype="multipart/form-data">
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="brand_name">Nom de marque</label>
@@ -36,19 +36,27 @@
                         </div>
                         <div class="form-group">
                             <label class="labelBrands" for="brand_image">Image </label>
-                            <input type="file" id="brand_image_input" class="form-control" name="brand_image">
+                            <input type="file" id="brand_image" class="form-control" name="brand_image">
 
                         </div>
+                        <div class="text-center" id="uploaded_image"></div>
+
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" id="btnADDbrand" class="btn btn-info" name="add_brand_sbmt">Ajouter</button>
+                        <button type="submit" id="btnADDbrand" class="btn btn-info">Ajouter</button>
+
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
 
+    <div>
+        <!-- <input type="file" id="brand_image" class="form-control" name="brand_image">
+        <div class="text-center" id="uploaded_image"></div> -->
 
+    </div>
 
 
 
@@ -78,5 +86,17 @@
 
     <!-- END Modal FOR ADDING NEW BRANDS -->
     <!-- JS -->
+
+
+
+
+
+
+    <script>
+        if (sessionStorage.getItem('role') !== "admin") {
+            document.location.href = "../view/Connect.php"
+        }
+    </script>
+
     <script src="../Js/car_brands.js"></script>
     <?php @include_once('FooterDash.php'); ?>

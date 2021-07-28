@@ -3,6 +3,7 @@
 
 <div class="container-fluid">
 
+
     <!-- Cart for Statistiques -->
     <div class="row">
 
@@ -96,12 +97,18 @@
 
 
     <!-- Staart Showing the Table For Reservations -->
+
+
     <table class="table">
 
     </table>
     <!-- End Table For Read reservationq -->
 
-
+    <script>
+        if (sessionStorage.getItem('role') !== "admin") {
+            document.location.href = "../view/Connect.php"
+        }
+    </script>
     <!-- JS -->
     <script src="../Js/Dashboard.js"></script>
 
