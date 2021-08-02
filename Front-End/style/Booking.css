@@ -186,11 +186,91 @@ h4 {
 
 #countainer .ImgBook {
   width: 50%;
+}
+
+#countainer .ImgBook #countainer_Select {
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 10px 5px 5px rgba(107, 107, 107, 0.185);
+          box-shadow: 10px 5px 5px rgba(107, 107, 107, 0.185);
+  border: solid 1px #05050518;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+#countainer .ImgBook #countainer_Select h3 {
+  font-size: 30px;
+}
+
+#countainer .ImgBook #countainer_Select .card_ithem {
+  border: solid 2px #833d3d21;
+  border-radius: 20px;
+  width: 80%;
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#countainer .ImgBook #countainer_Select .card_ithem .Infos_card {
+  width: 60%;
+  padding: 3%;
+}
+
+#countainer .ImgBook #countainer_Select .card_ithem .Infos_card .radio-custom {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  content: '';
+  background: #fff;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
   text-align: center;
 }
 
-#countainer .ImgBook img {
-  width: 65%;
+#countainer .ImgBook #countainer_Select .card_ithem .Infos_card .radio-custom-label {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#countainer .ImgBook #countainer_Select .card_ithem .Infos_card p {
+  margin-top: 3%;
+}
+
+#countainer .ImgBook #countainer_Select .card_ithem .Image_card {
+  width: 40%;
+}
+
+#countainer .ImgBook #countainer_Select .card_ithem .Image_card img {
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 #countainer .InputBooking {
@@ -231,87 +311,5 @@ h4 {
   border: none;
   margin-top: 4%;
   cursor: pointer;
-}
-
-#heroTwo {
-  display: none;
-}
-
-#heroTwo .AllCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 9%;
-  gap: 8%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#heroTwo .AllCard .card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#heroTwo .AllCard .card .calen {
-  width: 15%;
-}
-
-#heroTwo .AllCard .card .calen img {
-  width: 100%;
-}
-
-#heroTwo .AllCard .card h4 {
-  font-size: 15px;
-  margin-left: 4%;
-}
-
-#heroTwo .AllCard .card:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-#verificationCar #CarAvail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 5%;
-}
-
-#verificationCar #CarAvail .cardd {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
 }
 /*# sourceMappingURL=Booking.css.map */
