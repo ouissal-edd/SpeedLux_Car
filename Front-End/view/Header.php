@@ -11,8 +11,7 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="home.php">acceuil</a></li>
-                <li><a href="produits.php">Produit</a></li>
-                <li><a href="services.php">Nos Services</a></li>
+                <li><a href="services.php">Nos Services et Produits</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a id="connex" href="Connect.php">Se connecter</a></li>
                 <li><a style="cursor:pointer" id="deconnex" onclick="logOutt()">Deconnexion</a></li>

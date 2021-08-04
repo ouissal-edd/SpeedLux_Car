@@ -1,5 +1,8 @@
+@import "./variable";
+
+
 .footerOno{
-    background: #DA1C36;
+    background: $reed;
     display: flex;
 
     .phone{
@@ -12,20 +15,19 @@
     }
 
     .appStore{
-        display: flex;
-        flex-direction: column;
+        @include Column();
         align-items: center;
         margin-bottom: 5%;
       
       h4{
-    font-size: 30px;
+    font-size: $title_size;
     text-align: center;
     color: white;
     padding-top: 11%;
     padding-bottom: 3%;
 }
 p {
-    font-size: 16px;
+    font-size: $subtitle_size;
     color: white;
     padding-bottom: 8%;
     text-align: center;
@@ -33,8 +35,8 @@ p {
 }
 .rowAPP{
     gap: 6%;
-    display: flex;
-    flex-direction: row;
+    @include Row();
+
 }
     
 
@@ -46,7 +48,7 @@ p {
     margin-bottom: -55px;
     -webkit-transform: skew(0deg,2.5deg);
     transform: skew(0deg,-2.5deg);
-    background: #000E44;
+    background: $blue;
     margin-top: -34px;
 
 }
@@ -54,10 +56,10 @@ p {
 
 .footerDos{
     padding: 10%;
-    background: #000E44;
+    background: $blue;
     .secondefooter{
-        display: flex;
-        flex-direction: row;
+        @include Row();
+
         gap: 27%;
         
         .logofooter {
@@ -68,8 +70,8 @@ p {
         }
     }
     .Contact{
-        display: flex;
-        flex-direction: column;
+        @include Column();
+
         h5 {
             font-size: 25px;
             color: white;
@@ -83,8 +85,8 @@ p {
 
     
 .SocialR{
-    display: flex;
-    flex-direction: column;
+    @include Column();
+
     h5{
         font-size: 25px;
         color: white;

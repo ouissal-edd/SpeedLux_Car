@@ -1,46 +1,32 @@
 @import "./header";
 @import "./footer";
 
-$MyReed:#DA1C36;
-$MyBlue:#000E44;
-@mixin MyBtn {
-    padding: 1%;
-    margin-top: 8%;
-    background: none;
-    border-radius: 30px;
-    border: solid 2px $MyReed;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-}
-
 
 .hero{
     position: relative;
     min-height: 113vh;
     padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include center();
+    @include Column();
+
     background:linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.527)), url(../assets/services.jpg);
     background-size: cover ;
     color: white;
 
     h1{
-        font-size: 40px;
+        font-size: $title_size;
     }
     h5{
-        font-size: 25px;
+        font-size: $subtitle_size;
     }
     button{
-        @include MyBtn();
+        @include Button();
         &:hover{
-            background-color:$MyReed;
+            background-color:$reed;
         }
     }
     .bas{
-       width:5%;
+       width:4%;
        margin-top: 4%;
        margin-bottom: 2%;
        img{
@@ -52,24 +38,33 @@ $MyBlue:#000E44;
 }
 
 .ParentsServices{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include center();
+    @include Column();
+
+    
     width: 80%;
     margin: auto;
 h2{
+    text-transform: uppercase;
     margin-top: 4%;
-    margin-bottom: 4%;
-    font-size: 30px;
-    color: $MyBlue;
+    font-size: $title_size;
+    color: $blue;
     text-align: center;
     
 }
+h3{
+    font-size: $subtitle_size;
+    margin-bottom: 4%;
+    font-family: Playfair Display;
+    font-weight: 400;
+}
+
+
+
 
     .iconService{
-        display: flex;
-        flex-direction: row;
+        @include Row();
+
         gap: 10%;
         margin-bottom: 2%;
         justify-content: center;
@@ -78,8 +73,8 @@ h2{
 
         .iconn{
             width: 25%;
-           display: flex;
-           flex-direction: column;
+            @include Column();
+
             img{
                 width: 45%;
                 margin: auto;
@@ -87,22 +82,22 @@ h2{
             }
             h3{
                 text-align: center;
-                font-size: 25px;
-                color: $MyBlue;
+                font-size: $subtitle_size;
+                color: $blue;
                 margin-bottom: 5%;
             }
             p{
-                font-size: 17px;
+                font-size: $paragraph_size;
                 text-align: center;
             }
         }
     }
 
     .DescripServices{
-        display: flex;
-        flex-direction: row;
+        @include Row();
+
         p{
-            font-size: 25px;
+            font-size: $paragraph_size;
             color: black;
         }
     }
@@ -112,27 +107,24 @@ h2{
     background-size: cover ;
 width: 100%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.527)), url(../assets/ll.jpg);
-display: flex;
-flex-direction: column;
+    @include Column();
+
 gap: 8%;
 .servWork{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include center();
+    @include Column();
+
     margin-top: 3%;
     margin-bottom: 3%;
     h3{
-    font-size: 30px;
+    font-size: $title_size;
     color: white;
 
     }
 }
 .workroute{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include center();
+    @include Row();
     margin-bottom: 3%;
     gap: 8%;
 
@@ -143,7 +135,7 @@ width: 100%;
     }
 }
     h3{
-        font-size: 40px;
+        font-size: $title_size;
         color: white;
     }
 }
@@ -152,31 +144,38 @@ width: 100%;
 }
 
 .QualityService{
-    display: flex;
-    flex-direction: column;
+    @include Column();
+
     width: 80%;
     margin: auto;
     h2{
-        font-size: 40px;
+        font-size: $title_size;
         text-align: center;
         margin-top: 3%;
+        text-transform: uppercase;
+    }
+    h3{
+        font-size: $subtitle_size;
         margin-bottom: 3%;
+        font-family: Playfair Display;
+        font-weight: 400;
+        text-align: center
     }
     .regroupRow{
-        display: flex;
-        flex-direction: row;
+                   @include Row();
+
     .Descrip{
-        display: flex;
-        flex-direction: column;
+        @include Column();
+
 
         .OnoDescp{
-            display: flex;
-            flex-direction: row;
+            @include Row();
+
             width: 80%;
             gap: 18%;
             margin-bottom: 16%;
-            justify-content: center;
-            align-items: center;
+            @include center();
+
             .widthPhoto{
                 width: 90%;
                 
@@ -186,8 +185,8 @@ width: 100%;
             }
         }
             p{
-                font-size: 17px;
-                color: $MyBlue;
+                font-size: $paragraph_size;
+                color: $blue
             }
         }
     }
@@ -305,7 +304,7 @@ width: 100%;
         }
             p{
                 font-size: 12px;
-                color: $MyBlue;
+                color: $blue;
             }
         }
     }
@@ -420,7 +419,7 @@ width: 100%;
             }
                 p{
                     font-size: 12px;
-                    color: $MyBlue;
+                    color: $blue;
                 }
             }
         }
@@ -473,3 +472,159 @@ width: 100%;
     }
 }
 
+
+// Product
+.titlemodels{
+    h3{
+    font-size: $title_size;
+    text-align: center;
+    margin-top: 2%;
+    color: $blue;
+    }
+   
+}
+
+
+
+.content{
+    padding: 0 0 80px;
+    .banner{
+        .swiper-container {
+
+          width: 90%;
+          
+          .swiper-slide{
+              max-width: 276px;
+              img{
+                  width: 100%;
+                  border-radius: 200px 200px 0 0 ;
+              }
+              .slide-text{
+                  color : #fff;
+                  text-align: center;
+                  padding: 20px;
+                  transition: all ease 0.5s;
+                  font-family: Playfair Display;
+
+                  h3{
+                      text-transform: uppercase;
+                      font-size: 24px;
+                      font-weight: 400;
+                      margin-bottom: 10px;
+                  }
+                  p{
+                      font-weight: 300;
+                      font-size : 18px;
+                  }
+                  &:hover{
+                     transform: translateY(-100px); 
+                  }
+              }
+          }
+          }
+    }
+}
+
+
+.title_product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 3%;
+    h2{
+        font-size: $title_size;
+        margin-bottom: 1%;
+    }
+    h3{
+        font-family: Playfair Display;
+        font-size: $subtitle_size;
+        font-weight: 400;
+        margin-bottom: 2%;
+    }
+    p{
+        font-size: $paragraph_size;
+        line-height: 1.8;
+        color: #333333;
+        width: 45%;
+        text-align: center;
+
+    }
+}
+
+
+@media (max-width: 700px){
+  
+
+
+
+
+    .titlemodels{
+        h3{
+        font-size: 25px;
+       
+        }
+    }
+    
+
+    
+    .content{
+        .banner{
+            gap: 5%;
+            .swiper-container {
+    
+              width: 70%;
+              
+              .swiper-slide{
+                  max-width: 276px;
+                  img{
+                      width: 100%;
+                      border-radius: 150px 150px 0 0 ;
+                  }
+                  .slide-text{
+                     font-size: 13px;
+    
+                      p{
+                          font-size : 13px;
+                      }
+                      &:hover{
+                         transform: translateY(-100px); 
+                      }
+                  }
+              }
+              }
+        }
+    }
+    
+    
+    .title_product{
+       
+        h2{
+            font-size: 25px;
+            margin-bottom: 1%;
+        }
+        h3{
+            font-family: Playfair Display;
+            font-size: 1px;
+            font-weight: 400;
+            margin-bottom: 2%;
+        }
+        p{
+            font-size: 10px;
+            line-height: 1.8;
+            color: #333333;
+            width: 45%;
+            text-align: center;
+            font-family: Playfair Display;
+
+        }
+    }
+
+
+
+
+
+
+    
+}

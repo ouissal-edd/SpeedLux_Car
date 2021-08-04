@@ -15,13 +15,10 @@ function add() {
 }
 
 
-
-
-
-
+// --------- Read Car ------------------------------------------------------------------------------------
 
 async function ReadCars() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/cars/joitureCars.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/car/JointureCars')
     const ALLCars = await res.json()
     console.log({
         ALLCars
@@ -49,14 +46,14 @@ async function ReadCars() {
             `       
         <tbody >
             <tr>
-                <td>${ALLCars[i].car_name} </td>
-                <td>${ALLCars[i].brand_name} </td>
-                <td>${ALLCars[i].type_label} </td>
-                <td>${ALLCars[i].color} </td>
-                <td>${ALLCars[i].model} </td>
-                <td>${ALLCars[i].description} </td>
-                <td><button  class="btn btn-xs btn-outline btn-danger btn-card btn-add__delete" onclick="deleteCar(${ALLCars[i].id})"><i class="fas fa-trash"></i></td>
-                <td>  <button style="background:none; border: solid 1px #da1c36" class="btn btn-xs btn-outline btn-success btn-card btn-add__edit float-right"   data-toggle="modal"
+                <td class="thhCar" >${ALLCars[i].car_name} </td>
+                <td class="thhCar" >${ALLCars[i].brand_name} </td>
+                <td class="thhCar" >${ALLCars[i].type_label} </td>
+                <td class="thhCar" >${ALLCars[i].color} </td>
+                <td class="thhCar" >${ALLCars[i].model} </td>
+                <td class="thhCar" >${ALLCars[i].description} </td>
+                <td class="thhCar" ><button  class="btn btn-xs btn-outline btn-danger btn-card btn-add__delete" style="background:none; border:none" onclick="deleteCar(${ALLCars[i].id})"><i class="fas fa-trash"></i></td>
+                <td class="thhCar" >  <button style="background:none; border:none" class="btn btn-xs btn-outline btn-success btn-card btn-add__edit float-right"   data-toggle="modal"
                 data-target="#add_new_Cars" onclick="Update_Cars(${ALLCars[i].id})"><i class="fas fa-edit"> </i>
                 </button> </td>
              </tr>
@@ -69,10 +66,13 @@ async function ReadCars() {
 
 ReadCars();
 
+
+// ----------------Update Car by read single ----PROBLEME HERE--------------------------------------------------------------------------------
+
 const Update_Cars = async (id) => {
     btn_Edit.style.display = "block";
     btn_Add.style.display = "none";
-    fetch(`http://localhost/Nouveau%20dossier/Back-End/API/cars/read_single_car.php?id=${id}`)
+    fetch(`http://localhost/Nouveau%20dossier/Back-End/car/read_single_car?id=${id}`)
         .then(res => res.json())
         .then(data => {
             console.log(data)
@@ -89,14 +89,14 @@ const Update_Cars = async (id) => {
 
 
 
-// Dlete Brands
+//------------- Dlete Brands-----------------------------------------------------------------------------------
 
 function deleteCar(id) {
     obj = {
         id: `${id}`
     }
 
-    fetch('http://localhost/Nouveau%20dossier/Back-End/API/cars/delete_car.php', {
+    fetch('http://localhost/Nouveau%20dossier/Back-End/car/delete_car', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -111,12 +111,10 @@ function deleteCar(id) {
 
 
 
-
-
-
-// Remplissage form d'insertion
+// -------- Remplissage Select --------------------------------------------------------------------
+// ---by brand 
 async function Read_Brands() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/brands/read_brands.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/brand/read_brands')
     const api_Brands = await res.json()
     console.log({
         api_Brands
@@ -138,9 +136,10 @@ async function Read_Brands() {
 Read_Brands();
 
 
+// ----by type
 
 async function Read_Types() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/type/read_type.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/type/read_type')
     const api_Types = await res.json()
     console.log({
         api_Types
@@ -161,7 +160,7 @@ async function Read_Types() {
 Read_Types();
 
 
-// Creat Cars
+//------------- Creat Car---------------------------------------------------------------------------------------------
 document.getElementById('submit').addEventListener('click', create_Car);
 
 function create_Car() {
@@ -183,16 +182,15 @@ function create_Car() {
         redirect: 'follow'
     };
 
-    fetch("http://localhost/Nouveau%20dossier/Back-End/API/cars/create_car.php", requestOptions)
+    fetch("http://localhost/Nouveau%20dossier/Back-End/car/create_Car", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
 }
 
 
-// Edit Cars 
-/* document.getElementById('Edit_submit').addEventListener('click', Edit_car);
- */
+//--------- Update  Car---------------------------------------------------------------------------------------------------------
+
 function Edit_car() {
 
     var myHeaders = new Headers();
@@ -215,7 +213,7 @@ function Edit_car() {
         redirect: 'follow'
     };
 
-    fetch("http://localhost/Nouveau%20dossier/Back-End/API/cars/update_car.php", requestOptions)
+    fetch("http://localhost/Nouveau%20dossier/Back-End/car/update_Car", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));

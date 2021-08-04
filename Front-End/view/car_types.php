@@ -52,38 +52,6 @@
 
 
 
-    <!-- UPDATE Type Modal -->
-
-    <div class="modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Update </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <form id="UPDATE_Type">
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="type_label">Type</label>
-                            <input type="text" id="type_label_input" class="form-control" placeholder="Nom type" name="type_label">
-
-                        </div>
-                        <div class="form-group">
-                            <label class="descrip_label" for="type_label">Description </label>
-                            <input type="text" id="type_description_input" placeholder="Description" class="form-control" name="type_description">
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" id="btnADDType" class="btn btn-info">update</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <!-- END -->
 

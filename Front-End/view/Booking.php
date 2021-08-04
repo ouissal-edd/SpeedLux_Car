@@ -57,6 +57,10 @@
     <!-- content -->
 
     <!-- footer  -->
+
+    <div id="footer">
+        <p><span>Copyright &copy; SPEEDLUX Website by ED-DOUJ Ouissal 2021</span></p>
+    </div>
     <!-- end footer -->
     <script>
         if (sessionStorage.getItem('role') == null) {

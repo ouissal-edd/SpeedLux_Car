@@ -33,19 +33,19 @@
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-secondary" type="button" data-dismiss="modal">Quitter</button>
-					<button class="btn btn-primary" onclick="logOut()" id="decnx" name="decnx"> Se deconnecter</button>
+					<button class="btn btn-primary" onclick="Logout()"> Se deconnecter</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- INCLUDE JS SCRIPTS -->
-	<script src="../Js/session.js"></script>
+	<script src="../Admin/js/main.js"></script>
 	<script src="../Admin/js/jquery.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="../Admin/js/bootstrap.min.js"></script>
 	<script src="../Admin/js/sb-admin-2.min.js"></script>
-	>
+
 
 
 

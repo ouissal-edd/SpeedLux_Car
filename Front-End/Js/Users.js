@@ -1,5 +1,7 @@
+// ------Read users----------------------------------------------------------------------------------------------------
+
 async function ReadUsers() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/users/readUser.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/user/read_users')
     const ALLUsers = await res.json()
     console.log({
         ALLUsers
@@ -24,7 +26,7 @@ async function ReadUsers() {
                 <td>${ALLUsers[i].user_email} </td>
                 <td>${ALLUsers[i].full_name} </td>
              
-                <td><button style="background:none" class="btn btn-xs btn-outline btn-danger btn-card btn-add__delete" onclick="deleteUser(${ALLUsers[i].user_id})"><i class="fas fa-trash"></i></td>
+                <td><button style="background:none; border:none;" class="btn btn-xs btn-outline btn-danger btn-card btn-add__delete" onclick="deleteUser(${ALLUsers[i].user_id})"><i class="fas fa-trash"></i></td>
                
              </tr>
              </tbody>`
@@ -39,14 +41,14 @@ ReadUsers()
 
 
 
-// Dlete Brands
+//-------------------------- Dlete Brands-------------------------------------------------------------------------------
 
 function deleteUser(user_id) {
     obj = {
         user_id: `${user_id}`
     }
 
-    fetch('http://localhost/Nouveau%20dossier/Back-End/API/users/delete_user.php', {
+    fetch('http://localhost/Nouveau%20dossier/Back-End/user/delete_user', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

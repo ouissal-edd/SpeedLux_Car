@@ -1,6 +1,6 @@
 //  $ Count Users
 async function fetchUsers() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/users/readUser.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/user/read_users')
     const InfoUsers = await res.json()
 
     document.getElementById('MyClients').innerHTML = `${InfoUsers[0].num}`;
@@ -14,7 +14,7 @@ fetchUsers();
 // Count Brands
 
 async function fetchBrands() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/brands/read_brands.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/brand/read_brands')
     const InfoBrands = await res.json()
     document.getElementById('MyBrands').innerHTML = `${InfoBrands[0].num}`;
 }
@@ -27,7 +27,7 @@ fetchBrands();
 
 // Count Cars
 async function fetchCars() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/cars/read_car.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/car/read_car')
     const InfoCars = await res.json()
     document.getElementById('MyCars').innerHTML = `${InfoCars[0].num}`;
 }
@@ -40,7 +40,7 @@ fetchCars();
 // Start Read Count RESERVATION
 
 async function fetchReservation() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/reservation/read_rservation.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/reservation/read_rservation')
     const InfoReservation = await res.json()
     document.getElementById('MyReservation').innerHTML = `${InfoReservation[0].num}`;
 
@@ -49,8 +49,10 @@ async function fetchReservation() {
 fetchReservation();
 
 
+// -------Read Cars----------------------------------------------------------------------------------
+
 async function JointureReservation() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/reservation/readjoin.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/reservation/Jointure_resevation')
     const InfoReservationUsers = await res.json()
     console.log({
         InfoReservationUsers
@@ -95,14 +97,14 @@ async function JointureReservation() {
 JointureReservation();
 
 
-// Dlete Reservation 
+//--------------------- Dlete Reservation ---------------------------------------------------------------------------------
 
 function deleteReservation(reservation_id) {
     obj = {
         reservation_id: `${reservation_id}`
     }
 
-    fetch('http://localhost/Nouveau%20dossier/Back-End/API/reservation/delete_resrvation.php', {
+    fetch('http://localhost/Nouveau%20dossier/Back-End//reservation/delete_resrvation', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

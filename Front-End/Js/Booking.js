@@ -1,6 +1,3 @@
-const heroTwo = document.getElementById("heroTwo");
-const countainer = document.getElementById("countainer");
-
 pickup_date = document.getElementById('pickup_date');
 return_date = document.getElementById('return_date');
 pickup_location = document.getElementById('pickup_location');
@@ -8,22 +5,10 @@ return_location = document.getElementById('return_location');
 id_user = sessionStorage.getItem('id');
 
 
+// -----------------Read Avalaible Cars----------------------------------------------
 
-function heroTwoBlock() {
-    heroTwo.style.display = "block";
-    countainer.style.display = "none";
-
-}
-
-
-// Read Avalaible Cars
-
-
-
-
-// Read Avalaible Cars
 async function Avalaible_Cars() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/reservation/verification_car.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/reservation/verification_car')
     const CarsDispo = await res.json()
     console.log({
         CarsDispo
@@ -56,6 +41,7 @@ async function Avalaible_Cars() {
 Avalaible_Cars();
 
 
+// -----------------Create Reservation-------------------------------------------------------------
 
 function create_reservation() {
 
@@ -78,13 +64,13 @@ function create_reservation() {
         redirect: 'follow'
     };
 
-    fetch("http://localhost/Nouveau%20dossier/Back-End/API/reservation/create_reservation.php", requestOptions)
+    fetch("http://localhost/Nouveau%20dossier/Back-End/reservation/create_reservation", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
 }
 
-// block date precedente
+//------------Block precedente date ----------------------------------------------
 
 function getDay() {
     var today = new Date();

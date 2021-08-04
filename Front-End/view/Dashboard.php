@@ -99,9 +99,17 @@
     <!-- Staart Showing the Table For Reservations -->
 
 
-    <table class="table">
+    <div class="card shadow mb-4">
+        <div class="card-header py-4">
+            <h6 id="titleReserv" class="m-0 font-weight-bold text-primary">Reservation</h6>
+        </div>
+        <div class="card-body">
 
-    </table>
+            <table class="table">
+
+            </table>
+        </div>
+    </div>
     <!-- End Table For Read reservationq -->
 
     <script>

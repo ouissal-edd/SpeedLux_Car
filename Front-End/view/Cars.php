@@ -81,54 +81,6 @@
 
 
 
-
-        <!-- 
-        <div class="modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title"></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-                    <form id="Edite_Car">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label for="brand_name">Marque</label>
-                                <select name="car_brand" id="Select_brand_Edit" class="custom-select">
-                                </select>
-
-                                <label for="type_label">Type</label>
-                                <select name="car_types" id="Select_type_Edit" class="custom-select">
-                                </select>
-
-                                <label for="car_name">Couleur</label>
-                                <input type="text" id="car_name" class="form-control" placeholder="Nom voiture" name="car_name">
-
-                                <label for="color">Couleur</label>
-                                <input type="text" id="color" class="form-control" placeholder="Couleur voiture" name="color">
-
-                                <label for="model">Model</label>
-                                <input type="text" id="model" class="form-control" placeholder="Modele voiture" name="model">
-
-                                <label for="color">Description</label>
-                                <input type="text" id="description" class="form-control" placeholder="Description" name="description">
-
-                                <div class="modal-footer">
-                                    <button type="submit" id="submit" class="btn btn-info">Ajouter</button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
- -->
-
-        <!-- END Modal FOR ADDING NEW BRANDS -->
         <!-- JS -->
 
         <script>

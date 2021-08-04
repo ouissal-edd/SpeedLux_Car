@@ -3,8 +3,12 @@ var brand_name_input = document.getElementById('brand_name_input');
 const btnADDbrand = document.querySelector('#btnADDbrand');
 
 
+
+
+// -------Read Brand-----------------------------------------------------------------------------------------------
+
 async function ReadBrands() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/brands/read_brands.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/brand/read_brands')
     const ALLBRANDS = await res.json()
     console.log({
         ALLBRANDS
@@ -41,14 +45,14 @@ async function ReadBrands() {
 ReadBrands();
 
 
-// Dlete Brands 
+// ---------------Dlete Brands------------------------------------------------------------------------------------
 
 function deleteBrands(brand_id) {
     obj = {
         brand_id: `${brand_id}`
     }
 
-    fetch('http://localhost/Nouveau%20dossier/Back-End/API/brands/delete_brand.php', {
+    fetch('http://localhost/Nouveau%20dossier/Back-End/brand/delete_brand', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -61,7 +65,7 @@ function deleteBrands(brand_id) {
 }
 
 
-// ----CREAT BRANDS-----------------------------------------------------------------------------------------------------------
+// ----Create  Brand-----------------------------------------------------------------------------------------------------------
 
 document.getElementById('btnADDbrand').addEventListener('click', creat_brand);
 
@@ -105,7 +109,7 @@ function creat_brand() {
         redirect: 'follow'
     };
 
-    fetch("http://localhost/Nouveau%20dossier/Back-End/API/brands/create_brand.php", requestOptions)
+    fetch("http://localhost/Nouveau%20dossier/Back-End/brand/create_brand", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));

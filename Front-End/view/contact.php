@@ -31,17 +31,17 @@
     <!-- content -->
     <h2 data-aos="fade-right" class="titleOne">Contact</h2>
     <div id="tec" data-aos="fade-right" class="container">
-        <form action="">
+        <form action="../../Back-End/Send.php" method="post">
 
             <label>Email</label>
-            <input type="text" placeholder="Entrez votre email.">
+            <input type="text" name="Email" placeholder="Entrez votre email.">
 
             <label>Sujet</label>
-            <input type="text" placeholder="Sujet.">
+            <input type="text" name="Subject" placeholder="Sujet.">
 
             <label>Message</label>
-            <textarea placeholder="SpeedLux....." style="height:200px"></textarea>
-            <input type="submit" value="Envoyez">
+            <textarea placeholder="SpeedLux....." name="msg" style="height:200px"></textarea>
+            <input type="submit" name="btn-send" value="Envoyez">
         </form>
     </div>
 

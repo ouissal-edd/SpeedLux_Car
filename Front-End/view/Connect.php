@@ -46,10 +46,12 @@
         <hr>
         <form method="POST" id="regForm">
           <label>Nom Complet</label>
-          <input type="text" placeholder="Entrer votre nom" name="full_name" id="full_name" required>
+          <input type="text" onkeyup="validateName()" placeholder="Entrer votre nom" name="full_name" id="full_name" required>
+          <span id="error"></span><br>
 
           <label>Email</label>
-          <input type="email" placeholder="Entrer votre Email" name="user_email" id="user_email" required>
+          <input type="email" onkeyup="validateEmail()" placeholder="Entrer votre Email" name="user_email" id="user_email" required>
+          <span id="error1"></span><br>
 
           <label>Password</label>
           <input type="password" placeholder="Entrer votre Mot de Passe" name="password" id="password" required>

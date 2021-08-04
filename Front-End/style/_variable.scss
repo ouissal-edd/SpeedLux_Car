@@ -1,0 +1,40 @@
+$reed:#DA1C36;
+$blue : #032859;
+$blueSeconde:#044A8D;
+$title_size:30px;
+$paragraph_size:14px;
+$paragraph_card_size:18px;
+$subtitle_size:16px;
+$text_btn:13px;
+
+@mixin Button {
+    padding: 1%;
+    margin-top: 8%;
+    background: none;
+    border-radius: 30px;
+    border: solid 2px $reed;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-size: $text_btn;
+}
+
+@mixin  Column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin Row {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+    
+}
+ 
+
+

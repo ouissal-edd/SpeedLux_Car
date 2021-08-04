@@ -1,11 +1,10 @@
 <?php
 
 
-class Users
+class User
 {
     private $conn;
     private $table = 'users';
-
     public $user_id;
     public $user_email;
     public $full_name;
@@ -36,7 +35,7 @@ class Users
 
 
 
-    public function create_users()
+    public function create_user()
     {
 
         $query = 'INSERT INTO ' . $this->table . ' SET  user_email = :user_email , full_name= :full_name , password = :password ';

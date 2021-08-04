@@ -1,51 +1,39 @@
 @import "./header";
+@import "./variable";
 
 
-$MyReed:#DA1C36;
-$MyBlue:#000E44;
-@mixin MyBtn {
-    padding: 1%;
-    margin-top: 8%;
-    background: none;
-    border-radius: 30px;
-    border: solid 2px $MyReed;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-}
+
  
 
 .hero{
     position: relative;
     min-height: 50vh;
     padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include center();
+    @include Column();
     background:linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.527)), url(../assets/reserv.png);
     background-size: cover ;
     color: white;
 
     h1{
-        font-size: 40px;
+        font-size: $title_size;
         
     } 
 }
 
 h4{
-    font-size: 30px;
+    font-size: $title_size;
     margin-top: 6%;
     margin-bottom: 5%;
     text-align: center;
-    color: $MyBlue;
+    color: $blue;
 }
  #countainer{
     display: block;
-     display: flex;
-     flex-direction: row;
+    @include Row();
      position: relative;
      padding-left: 3%;
+     margin-bottom: 10%;
   
      .ImgBook{
          width: 50%;
@@ -53,18 +41,17 @@ h4{
             width: 100%;
             padding-top: 3%;
             padding-bottom: 3%;
-            display: flex;
-            flex-direction: column;
             gap: 5%;
-            align-items: center;
-            justify-content: center;
             box-shadow: 10px 5px 5px rgba(107, 107, 107, 0.185);
             border: solid 1px #05050518;
             border-radius: 20px;
             margin: auto;
             margin-bottom: 1%;
+            @include Column();
+            @include center();
+
             h3{
-              font-size: 30px;
+              font-size: $subtitle_size;
     
             }
             .card_ithem{
@@ -96,14 +83,16 @@ h4{
                 position: relative;
                 display: inline-block;
                  vertical-align: middle;
-                    margin: 5px;
+                margin: 5px;
                  cursor: pointer;
+                 font-size: $subtitle_size;
     }
     
     
     
     p{
         margin-top: 3%;
+        font-size: $paragraph_size;
     }
     
             }
@@ -138,7 +127,7 @@ h4{
              input{
                 width: 80%;
                 padding: 12px 0;
-                font-size: 16px;
+                font-size: $paragraph_size;
                 border:none;
                 border-bottom: 1px solid #001771 ;
                 outline: none; 
@@ -159,6 +148,21 @@ h4{
          }
      }
 
+     #footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $blue;
+        color: white;
+        text-align: center;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        margin-top: 2%;
+        p{
+            font-size: $paragraph_size;
+        }
+     }
      
 
    

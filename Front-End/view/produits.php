@@ -43,19 +43,6 @@
                         school.</p>
                 </div>
             </div>
-
-            <div class="events reversed">
-                <div class="vid">
-                    <img class="imgTwo" name="SlideShowTwo">
-                </div>
-                <div class="eventDiscriptionReversed">
-                    <h1 class="descriptionHeader">International Fair</h1>
-                    <p class="descriptionPar">Held in November, the International
-                        Fair brings together the formidable
-                        organizational power of our two
-                        Parent Associations.</p>
-                </div>
-            </div>
         </div>
 
 
@@ -82,22 +69,43 @@
 
         </div>
 
-        <div class="Filtre">
-            <div onclick="TableFilter()" class="divfil">
-                <div class="photofiltre">
-                    <img src="../assets/filter.png">
-                    <h3>Filtrer</h3>
+
+        <div class="c-product-tray">
+
+            <div class="o-wrapper">
+
+                <h2 class="c-product-tray__heading">Our Products</h2>
+
+                <div class="c-product-tray__carousel">
+
+                    <div class="o-slider-product-tray">
+
+                        <div class="o-slider-product-tray__controls js-controls">
+
+                            <button class="o-slider-product-tray__button o-slider-product-tray__button--prev">
+                                <svg class="o-slider-product-tray__arrow o-slider-product-tray__arrow--prev" xmlns="http://www.w3.org/2000/svg" viewBox="-44 40.7 11 21.1">
+                                    <path d="M-33.5 61.8L-44 51.3l10.5-10.6.5.5-10.1 10.1 10.1 10z" />
+                                </svg>
+                            </button>
+
+                            <button class="o-slider-product-tray__button o-slider-product-tray__button--next">
+                                <svg class="o-slider-product-tray__arrow o-slider-product-tray__arrow--next" xmlns="http://www.w3.org/2000/svg" viewBox="-44 40.7 11 21.1">
+                                    <path d="M-33.5 61.8L-44 51.3l10.5-10.6.5.5-10.1 10.1 10.1 10z" />
+                                </svg>
+                            </button>
+
+                        </div>
+
+
+                        <ul class="o-slider-product-tray__inner js-slider-product-tray">
+
+
+                        </ul>
+
+                    </div>
+
                 </div>
-                <div id="typeCar"></div>
-            </div>
-            <div class="TtProduits">
-                <img src="../assets/4.png" alt="" class="event">
-                <div class="Description">
-                    <h3>Berline</h3>
-                    <h4>Essence</h4>
-                    <p>Done for the poor children ,Our team make a big event for the poor children for make him happy happiness is the best gift to done Notre programme vous fait découvrir toute la filière événementielle, vous met en contact avec ses acteurs et vous place dans un environnement professionnel riche et permanent..</p>
-                    <button>Reservez</button>
-                </div>
+
             </div>
 
         </div>
@@ -108,7 +116,7 @@
         <?php @include_once('Footer.php'); ?>
         <!-- end footer -->
 
-        <script src="../Js/navbar.js"></script>
+        <!-- <script src="../Js/navbar.js"></script> -->
         <script src="../Js/produits.js"></script>
 
         <script>

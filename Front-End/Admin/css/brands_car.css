@@ -1,27 +1,17 @@
 /* Style Car Brands  */
 
 #titleBrand {
-    color: #0a184e !important;
+    color: #007bff !important;
   }
   
   #button_ADD_Brand{
-    color: #fff;
+  color: #fff;
    border: none;
-    background: linear-gradient(336deg,#00044E 10%,#DA1C36 100%);
+    background:#007bff;
   }
  
-  #btnADDbrand {
-    color: #DA1C36;
-    background: none;
-    border-color: #DA1C36;
-  }
   
-  #btnADDbrand:hover{
-    background: #DA1C36;
-    color: white;
-    border: none;
-  
-  }
+ 
   .form-control {
     border: 1px solid #000000;
   }
@@ -32,11 +22,14 @@
    color: #00044E;
   }
   .mythBrnd{
-       color: black;
+       color: #222324;
   text-align: center;
   }
   #deleteForBrands{
     cursor: pointer;
   background: none;
+  border: none;
   }
-  
+  #btnADDbrand{
+    background-color: #007bff !important;
+  }

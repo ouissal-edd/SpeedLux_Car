@@ -20,6 +20,9 @@
     <!-- CSS FILES -->
     <link href="../Admin/css/DashAdmin.css" rel="stylesheet">
     <link href="../Admin/css/brands_car.css" rel="stylesheet">
+    <link href="../Admin/css/type_car.css" rel="stylesheet">
+
+
 
     <link href="../Admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="../Admin/css/main.css" rel="stylesheet">

@@ -1,8 +1,10 @@
 const type_label_input = document.getElementById('type_label_input');
 const type_description_input = document.getElementById('type_description_input');
 
+// ------- Read Type -----------------------------------------------------------------------------
+
 async function ReadTypes() {
-    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/API/type/read_type.php')
+    const res = await fetch('http://localhost/Nouveau%20dossier/Back-End/type/read_type')
     const ALLTYPES = await res.json()
     console.log({
         ALLTYPES
@@ -39,14 +41,14 @@ async function ReadTypes() {
 ReadTypes();
 
 
-// Dlete Type
+// --------------Dlete Type--------------------------------------------------------------------------
 
 function deleteType(type_id) {
     obj = {
         type_id: `${type_id}`
     }
 
-    fetch('http://localhost/Nouveau%20dossier/Back-End/API/type/delete_type.php', {
+    fetch('http://localhost/Nouveau%20dossier/Back-End/type/delete_type', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -58,7 +60,8 @@ function deleteType(type_id) {
 
 }
 
-// CREAT Type
+//------------- CREAT Type-----------------------------------------------------------------------------------------------------
+
 document.getElementById('ADD_Type').addEventListener('submit', create_type);
 
 function create_type() {
@@ -76,14 +79,14 @@ function create_type() {
         redirect: 'follow'
     };
 
-    fetch("http://localhost/Nouveau%20dossier/Back-End/API/type/create_type.php", requestOptions)
+    fetch("http://localhost/Nouveau%20dossier/Back-End/type/create_type", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
 }
 
 
-// UPDATE Type
+//-------------------- UPDATE Type-----------------------------------------------------------------------
 
 
 document.getElementById('UPDATE_Type').addEventListener('submit', update_type);
@@ -105,7 +108,7 @@ function update_type() {
         redirect: 'follow'
     };
 
-    fetch("http://localhost/Nouveau%20dossier/Back-End/API/type/update_type.php", requestOptions)
+    fetch("http://localhost/Nouveau%20dossier/Back-End/type/update_type", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
