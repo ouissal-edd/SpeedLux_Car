@@ -112,6 +112,9 @@
     </div>
     <!-- End Table For Read reservationq -->
 
+    <!-- Modal Avertissement  -->
+
+
     <script>
         if (sessionStorage.getItem('role') !== "admin") {
             document.location.href = "../view/Connect.php"
@@ -119,5 +122,5 @@
     </script>
     <!-- JS -->
     <script src="../Js/Dashboard.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <?php @include_once('FooterDash.php'); ?>

@@ -52,7 +52,7 @@
                             <input type="text" id="description" class="form-control" placeholder="Description" name="description">
 
                             <div id="For_ADD" class="modal-footer">
-                                <button type="submit" style="width:100%" id="submit" class="btn btn-info">Ajouter</button>
+                                <button type="submit" style="width:100%" id="submit_btn_add_car" class="btn btn-info">Ajouter</button>
                             </div>
 
                             <div id="For_Edit" class="modal-footer">

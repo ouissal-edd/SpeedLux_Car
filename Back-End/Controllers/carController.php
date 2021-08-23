@@ -127,14 +127,9 @@ class carController
 
     public function read_single_car()
     {
-
-        // Get ID
-        $this->car->id = isset($_GET['id']) ? $_GET['id'] : die();
-
-        // Get PRODUCT
+        $this->car->id = $this->data->id;
         $this->car->read_single();
 
-        // Create array
         $car_arr = array(
             'id' => $this->car->id,
             'car_name' => $this->car->car_name,
@@ -143,7 +138,6 @@ class carController
             'description' => $this->car->description,
         );
 
-        // Make JSON
         print_r(json_encode($car_arr));
     }
 

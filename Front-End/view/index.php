@@ -23,7 +23,7 @@
         <h1 data-aos="fade-right">On Vous Offres le Meilleurs Avec un Simple CLICK!.</h1>
         <h5 data-aos="fade-right">réserver maintenant avec de bon prix et haute qualités , des prix qui débute par 70$
         </h5>
-        <button onclick="Appel_Section_reservation()" data-aos="fade-right"> <a style="text-decoration:none; color:white;" href="Booking.php"> Réserver Maintenant ! </a></button>
+        <button data-aos="fade-right"> <a style="text-decoration:none; color:white;" href="Booking.php"> Réserver Maintenant ! </a></button>
 
     </div>
 

@@ -14,7 +14,6 @@ class Type
         $this->conn = $db;
     }
 
-    // for brands
     public function create_Type()
     {
         $query = 'INSERT INTO ' . $this->table . ' SET  type_label = :type_label, type_description = :type_description';

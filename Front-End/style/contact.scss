@@ -97,6 +97,7 @@
 
         h1 {
             font-size: 30px;
+            text-align: center;
         }
         h5{
             font-size: 20px;
@@ -127,10 +128,12 @@
             font-size: 20px;
         }
         h5{
-            font-size: 15px;
+            display: none;
+
         }
         button {
             font-size: 10px;
+            padding: 3%;
         }
     }
     .titleOne{

@@ -14,7 +14,6 @@ class Brand
     $this->conn = $db;
   }
 
-  // for brands
   public function create_Brand()
   {
     $query = 'INSERT INTO ' . $this->table . ' SET  brand_name = :brand_name, brand_image = :brand_image';
@@ -82,9 +81,4 @@ class Brand
 
     return $stm;
   }
-  // end query brand
-
-
-
-
 }

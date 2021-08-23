@@ -207,6 +207,7 @@ width: 100%;
 @media (max-width: 1100px){
   
 .hero{
+    padding: 50px 30px;
     h1{
         font-size: 35px;
     }
@@ -328,12 +329,18 @@ width: 100%;
     .hero{
         h1{
             font-size: 20px;
+            text-align: center;
         }
         h5{
             font-size: 15px;
+            display: none;
         }
-       
-        
+        button{
+         padding: 3%;
+        }
+        .bas{
+            width: 13%;
+        }
     }
     
     .ParentsServices{

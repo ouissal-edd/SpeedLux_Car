@@ -38,17 +38,21 @@ class User
     public function create_user()
     {
 
-        $query = 'INSERT INTO ' . $this->table . ' SET  user_email = :user_email , full_name= :full_name , password = :password ';
+        $query = 'INSERT INTO ' . $this->table . ' SET  user_email = :user_email , full_name= :full_name , password = :password , role = :role';
         $stmt = $this->conn->prepare($query);
 
         $this->full_name = htmlspecialchars(strip_tags($this->full_name));
         $this->user_email = htmlspecialchars(strip_tags($this->user_email));
         $this->password = htmlspecialchars(strip_tags($this->password));
+        $this->role = htmlspecialchars(strip_tags($this->role));
+
 
 
         $stmt->bindParam(":full_name", $this->full_name);
         $stmt->bindParam(":user_email", $this->user_email);
         $stmt->bindParam(":password", $this->password);
+        $stmt->bindParam(":role", $this->role);
+
 
 
 
@@ -126,24 +130,22 @@ class User
         $stmt->bindParam(":user_email", $this->user_email);
 
         $stmt->execute();
-        $count = $stmt->rowCount();
-        return $count;
+        return $stmt;
     }
 
 
     public function Connect_users()
     {
-        $query = 'SELECT * FROM ' . $this->table . '   WHERE  user_email = :user_email AND password = :password ';
+        $query = 'SELECT * FROM ' . $this->table . '   WHERE  user_email = :user_email';
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":user_email", $this->user_email);
-        $stmt->bindParam(":password", $this->password);
-
         $stmt->execute();
-        $row   = $stmt->fetch(PDO::FETCH_ASSOC);
 
+        $row   = $stmt->fetch(PDO::FETCH_ASSOC);
+        $hashPassword = $row['password'];
         $count = $stmt->rowCount();
 
-        if ($count == 1) {
+        if ($count == 1 && password_verify($this->password, $hashPassword)) {
             $this->id_user = $row['user_id'];
             $this->role = $row['role'];
             $login = array($this->id_user, $this->role);

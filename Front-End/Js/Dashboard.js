@@ -97,13 +97,16 @@ async function JointureReservation() {
 JointureReservation();
 
 
+
 //--------------------- Dlete Reservation ---------------------------------------------------------------------------------
+//  alert 
 
 function deleteReservation(reservation_id) {
+    swal("Succes", "la reservation a été supprimer avec succes", "success");
+
     obj = {
         reservation_id: `${reservation_id}`
     }
-
     fetch('http://localhost/Nouveau%20dossier/Back-End//reservation/delete_resrvation', {
             method: 'DELETE',
             headers: {
@@ -112,6 +115,8 @@ function deleteReservation(reservation_id) {
             body: JSON.stringify(obj)
         }).then(res => res.json())
         .then(data => console.log(data))
+
     JointureReservation()
+
 
 }

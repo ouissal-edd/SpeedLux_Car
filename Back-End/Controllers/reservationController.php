@@ -171,7 +171,7 @@ class reservationController
         } else {
             echo json_encode(
                 array(
-                    'msg' => 'Reservation has been created'
+                    'msg' => 'Reservation has not been created'
                 )
             );
         }

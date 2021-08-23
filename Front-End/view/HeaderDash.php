@@ -130,7 +130,7 @@
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.php" target="_blank">
+                            <a class="nav-link" href="index.php" target="_blank">
                                 <i class="far fa-eye"></i>
                                 <span style="margin-left: 5px;">Retour au site Web</span>
                             </a>

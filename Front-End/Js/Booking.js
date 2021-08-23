@@ -21,8 +21,8 @@ async function Avalaible_Cars() {
             <div class="Infos_card">
      
                 <input
-                class="radio-custom" name="car_id" type="radio" id="id_car" value="${CarsDispo[i].id}">
-                <label radio-custom-label for="id_car">${CarsDispo[i].car_name}</label>
+                class="radio-custom" name="car_id" type="radio"  value="${CarsDispo[i].id}">
+                <label radio-custom-label for="id_car">${CarsDispo[i].car_name} ${CarsDispo[i].brand_name}  </label>
                 
                 <p>Type : ${CarsDispo[i].type_label}  de couleur : ${CarsDispo[i].color} model : ${CarsDispo[i].model} </p> 
               
@@ -42,9 +42,11 @@ Avalaible_Cars();
 
 
 // -----------------Create Reservation-------------------------------------------------------------
+function none_alert() {
+    document.getElementById('alertt').style.display = "none";
+}
 
 function create_reservation() {
-
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
@@ -65,8 +67,18 @@ function create_reservation() {
     };
 
     fetch("http://localhost/Nouveau%20dossier/Back-End/reservation/create_reservation", requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
+        .then(response => response.json())
+        .then((result) => {
+
+            if (result.msg == "New Reservation  has been inserted successfully.") {
+                document.getElementById('alertt').style.display = "block";
+            } else
+                document.getElementById('msgg').innerHTML = "Une erreur est detecter Ressayer";
+            document.getElementById('alertt').style.display = "block";
+
+
+
+        })
         .catch(error => console.log('error', error));
 }
 

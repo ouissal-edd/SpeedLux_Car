@@ -22,7 +22,7 @@
         <h1 data-aos="fade-right">Découvrez Nos Services et Profiter des Nouvelles Offres</h1>
         <h5 data-aos="fade-right">réserver maintenant avec de bon prix et haute qualités , des prix qui débute par 70$
         </h5>
-        <button data-aos="fade-right">Réserver Maintenant !</button>
+        <button data-aos="fade-right"> <a style="text-decoration:none; color:white;" href="Booking.php"> Réserver Maintenant ! </a></button>
         <div class="bas"> <a href="#tec"> <img src="../assets/bas.png" alt=""> </a></div>
     </div>
 
@@ -34,16 +34,17 @@
         <!-- <div class="Allserv"> -->
         <div class="iconService">
             <div id="nondiv" data-aos="fade-up" class="iconn noneInresonsive"> <img src="../assets/service24.png" alt="">
-                <h3 data-aos="fade-up">Service</h3>
-                <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sit. Maiores est odit ullam nesciunt enim asperiores sunt dolore magnam debitis, id laboriosam error aliquam excepturi accusantium velit. Sunt, et!</p>
+                <h3 data-aos="fade-up">Disponibilité 24/24</h3>
+                <p data-aos="fade-up">Commercial avant tout, l’agent est à l’écoute des besoins des clients afin de leur proposer un service adapté. Il les conseille notamment dans leurs choix de véhicule et les aide à remplir le contrat de location.</p>
             </div>
             <div data-aos="fade-up" class="iconn"> <img src="../assets/settings.png" alt="">
-                <h3 data-aos="fade-up">Service</h3>
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a deserunt ratione, praesentium, mollitia amet reprehenderit eius corrupti architecto eveniet, repellendus dignissimos veritatis iste culpa voluptatem. Fugit nobis cum non.</p>
+                <h3 data-aos="fade-up">Maintenance</h3>
+                <p data-aos="fade-up">Réceptionne le véhicule, l’examine pour vérifier son état. En cas d’incident non prévu dans le contrat, de réclamation client, de retour de véhicule non conforme ou retard, il se charge de régler le problème.</p>
             </div>
             <div data-aos="fade-up" class="iconn"> <img src="../assets/carburant.png" alt="">
-                <h3 data-aos="fade-up">Service</h3>
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a deserunt ratione, praesentium, mollitia amet reprehenderit eius corrupti architecto eveniet, repellendus dignissimos veritatis iste culpa voluptatem. Fugit nobis cum non.</p>
+                <h3 data-aos="fade-up">Carburant</h3>
+                <p data-aos="fade-up">Si vous rendez le véhicule avec le plein, vous n’avez aucun frais à payer même si vous avez pris l’option carburant lors de la signature du contrat de location de voiture. N'oubliez pas de en profiter.
+                </p>
             </div>
         </div>
     </div>
@@ -69,13 +70,13 @@
 
                 <div class="OnoDescp">
                     <div class="widthPhoto"> <img src="../assets/bonprix.png" alt=""></div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod iste, id dolorum nesciunt quo illo omnis perspiciatis voluptates eveniet rem temporibus, quidem animi. Nemo neque nulla maxime magni, error saepe.</p>
+                    <p>Un design robuste, une calandre chromée, des optiques avec signature lumineuse Dacia, Logan a tout pour plaire au meilleur prix.</p>
                 </div>
 
 
                 <div class="OnoDescp">
                     <div class="widthPhoto"> <img src="../assets/qualité.png" alt=""></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum assumenda necessitatibus excepturi quam modi veritatis inventore vitae amet quaerat nesciunt voluptate natus consequuntur repellendus iure vero, in facilis perferendis. Impedit.</p>
+                    <p>Le développement de process de production flexible et économe en ressources l’optimisation des process pour la production en série à prix compétitifs.</p>
                 </div>
 
 
@@ -90,9 +91,9 @@
 
     <!-- part of product  -->
     <div class="title_product">
-        <h2>OUR RENTAL FEET</h2>
+        <h2>NOS PRODUIT </h2>
         <h3>Luxury Speed Car</h3>
-        <p>Amco laboris nisi ut aliquip xea comod consequt duis aute irure dolor reprehenderit voluptate velit cillum dolore fugiat lore ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt
+        <p>Du confort pour tous les passagers grâce aux commandes de lève-vitres électriques avant et arrière. Le conducteur règle sa vitre en toute simplicité avec le mode impulsionnel.
         </p>
     </div>
 
@@ -106,12 +107,13 @@
                     <!-- Slides -->
 
                 </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+
 
 
         </div>

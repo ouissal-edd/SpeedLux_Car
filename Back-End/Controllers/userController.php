@@ -24,18 +24,29 @@ class userController
 
     public function creat_user()
     {
-
         $this->users->user_email =  $this->data->user_email;
         $this->users->full_name =  $this->data->full_name;
-        $this->users->password =  $this->data->password;
+        $this->users->password =  password_hash($this->data->password, PASSWORD_DEFAULT);
+        $this->users->role =  $this->data->role = "client";
 
+        $result = $this->users->UserExist();
+        $count = $result->rowCount();
 
-        $this->users->create_user();
-        echo json_encode(
-            array(
-                'msg' => 'Users created successfully.'
-            )
-        );
+        if ($count > 0) {
+            echo json_encode(
+                array(
+                    'msg' => 'user existe.'
+                )
+            );
+        } else if ($count == 0) {
+
+            $this->users->create_user();
+            echo json_encode(
+                array(
+                    'msg' => 'Users created successfully.'
+                )
+            );
+        }
     }
 
     public function read_users()
@@ -110,9 +121,6 @@ class userController
     {
         $this->users->user_email =  $this->data->user_email;
         $this->users->password =  $this->data->password;
-
-        $count =  $this->users->Connect_users();
-
 
         $id =  $this->users->Connect_users();
 

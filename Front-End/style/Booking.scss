@@ -1,5 +1,7 @@
 @import "./header";
 @import "./variable";
+@import "./alert";
+
 
 
 
@@ -163,9 +165,29 @@ h4{
             font-size: $paragraph_size;
         }
      }
+    
      
 
-   
+   @media (max-width: 800px) {
+       
+           h4{
+               font-size: 18px;
+           }
+       
+    #countainer{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        .ImgBook{
+            width: 90%;
+        }
+        .InputBooking{
+            width: 90%;
+        }
+    }
+   }
  
 
 

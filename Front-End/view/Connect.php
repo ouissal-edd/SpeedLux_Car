@@ -21,15 +21,16 @@
   <div id="heroOne" class="hero">
     <div class="cc">
       <div class="container">
+
         <h1>Se Connecter</h1>
         <hr>
         <form method="POST" id="ConnectForm">
 
           <label>Email</label>
-          <input id="email_user" type="email" placeholder="Entrer votre Email" name="user_email" required>
+          <input id="email_user" type="email" placeholder="Entrer votre Email" name="user_email">
 
           <label>Password</label>
-          <input id="Psw" type="password" placeholder="Entrer votre Mot de Passe" name="password" required>
+          <input id="Psw" type="password" placeholder="Entrer votre Mot de Passe" name="password">
 
 
           <button type="submit" id="cnx" name="cnx" class="connect">Se connecter</button>
@@ -42,6 +43,15 @@
   <div id="heroTwo" class="hero">
     <div class="cc">
       <div class="container">
+        <div id="alertt">
+          <div class="alert">
+            <span class="far fa-grin-beam"></span>
+            <span id='msgg' class="msg">Votre Inscription a été creer avec succes</span>
+            <span onclick="none_alert()" class="close-btn">
+              <span id="icon" class="fas fa-times"></span>
+            </span>
+          </div>
+        </div>
         <h1>S'enregistrer</h1>
         <hr>
         <form method="POST" id="regForm">
@@ -54,7 +64,8 @@
           <span id="error1"></span><br>
 
           <label>Password</label>
-          <input type="password" placeholder="Entrer votre Mot de Passe" name="password" id="password" required>
+          <input type="password" onkeyup="validatePassword()" placeholder="Entrer votre Mot de Passe" name="password" id="password" required>
+          <span id="error2"></span><br>
 
 
           <button type="submit" id="submit" name="submit" class="connect"> S'enregistrer</button>
@@ -76,6 +87,8 @@
 
   <script src="../Js/connect.js"></script>
   <script src="../Js/navbar.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
   <script>
     AOS.init();
   </script>

@@ -45,8 +45,15 @@ function insertUser(e) {
     };
 
     fetch("http://localhost/Nouveau%20dossier/Back-End/user/creat_user", requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
+        .then(response => response.json())
+        .then((result) => {
+            if (result.msg == "Users created successfully.") {
+                document.getElementById('alertt').style.display = "block";
+            } else if (result.msg == "user existe.")
+                document.getElementById('error1').style.color = 'red';
+            document.getElementById('error1').innerHTML = 'Email existe déja'
+
+        })
         .catch(error => console.log('error', error));
 }
 
@@ -135,8 +142,33 @@ function validateEmail() {
 }
 
 
+
+function validatePassword() {
+    var Psw = document.getElementById("password").value;
+
+    if (Psw.length == 0) {
+        producePrompt("ce champ est obligatoir", "error2", "red");
+        return false;
+    }
+
+    if (!Psw.match(/^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$/)) {
+        producePrompt("mot de passe doit ressembler a  A3c$aaaa ", "error2", "red");
+        return false;
+
+    }
+
+    producePrompt("votre mot de passe est valide", "error2", "green");
+    return true;
+}
+
+
 function producePrompt(message, promptlocation, color) {
     document.getElementById(promptlocation).innerHTML = message;
     document.getElementById(promptlocation).style.color = color;
 
+}
+
+// alert 
+function none_alert() {
+    document.getElementById('alertt').style.display = "none";
 }

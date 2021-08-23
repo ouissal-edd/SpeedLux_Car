@@ -30,6 +30,7 @@ if (isset($params[0]) & !empty($params[0])) {
                     $obj->$action();
                 }
             } else {
+                // http_response_code — Récupère ou définit le code de réponse HTTP
                 http_response_code(404);
                 echo "this method doesn't exist";
             }
@@ -42,5 +43,5 @@ if (isset($params[0]) & !empty($params[0])) {
         echo "this page doesn't exsit";
     }
 } else {
-    echo "test";
+    echo "error 404";
 }

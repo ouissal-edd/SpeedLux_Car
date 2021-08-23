@@ -18,7 +18,6 @@ class Car
         $this->conn = $db;
     }
 
-    // for brands
     public function create_Car()
     {
         $query = 'INSERT INTO ' . $this->table . ' SET  brand_id = :brand_id, type_id = :type_id , car_name = :car_name , color = :color , model = :model , description = :description';
@@ -69,7 +68,6 @@ class Car
         $stmt = $this->conn->prepare($query);
 
         $this->id = htmlspecialchars(strip_tags($this->id));
-        // $this->brand_id = htmlspecialchars(strip_tags($this->brand_id));
         $this->type_id = htmlspecialchars(strip_tags($this->type_id));
         $this->car_name = htmlspecialchars(strip_tags($this->car_name));
         $this->color = htmlspecialchars(strip_tags($this->color));
@@ -77,7 +75,6 @@ class Car
         $this->description = htmlspecialchars(strip_tags($this->description));
 
         $stmt->bindParam(":id", $this->id);
-        // $stmt->bindParam(":brand_id", $this->brand_id);
         $stmt->bindParam(":type_id", $this->type_id);
         $stmt->bindParam(":car_name", $this->car_name);
         $stmt->bindParam(":color", $this->color);

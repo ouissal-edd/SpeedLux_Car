@@ -67,13 +67,28 @@ async function ReadCars() {
 ReadCars();
 
 
-// ----------------Update Car by read single ----PROBLEME HERE--------------------------------------------------------------------------------
+// ----------------Update Car  read single ---------------------------------------------------------------------------------
 
 const Update_Cars = async (id) => {
     btn_Edit.style.display = "block";
     btn_Add.style.display = "none";
-    fetch(`http://localhost/Nouveau%20dossier/Back-End/car/read_single_car?id=${id}`)
-        .then(res => res.json())
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+        id: `${id}`
+    });
+
+    var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+
+    fetch("http://localhost/Nouveau%20dossier/Back-End/car/read_single_car", requestOptions)
+        .then(response => response.json())
         .then(data => {
             console.log(data)
             document.getElementById('id_car').value = data.id;
@@ -84,12 +99,10 @@ const Update_Cars = async (id) => {
 
 
         })
+        .catch(error => console.log('error', error));
 }
 
-
-
-
-//------------- Dlete Brands-----------------------------------------------------------------------------------
+//------------- Dlete Car-----------------------------------------------------------------------------------
 
 function deleteCar(id) {
     obj = {
@@ -161,7 +174,7 @@ Read_Types();
 
 
 //------------- Creat Car---------------------------------------------------------------------------------------------
-document.getElementById('submit').addEventListener('click', create_Car);
+document.getElementById('submit_btn_add_car').addEventListener('click', create_Car);
 
 function create_Car() {
     var myHeaders = new Headers();
